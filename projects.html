@@ -6,29 +6,177 @@
     <body>
         <div class="top">
             <div class="topnav">
-                <a class="main" href="index.html">JJ Wyetzner</a>
+                <a class="main" href="index.html">Arul Rhik Mazumder</a>
                 <div class = "nav">
-                    <a class="active" href="projects.html">Projects</a>
-                    <a href="education.html">Education</a>
-                    <a href="updatedresume.pdf">Resumé</a>
+                    <a class="active" href="projects.html">My Work</a>
+                    <a href="education.html">Experiences</a>
+                    <a href="blog.html">Thoughts</a>
+                    <a href="updatedresume.pdf">Resume</a>
                 </div>
             </div>
         </div>
-        <div class="project">
-            <h1 class="projecttitle">Stochastic Neural Networks</a>
-            <p>Coming Soon...</p>
-        </div>
-        <div class="project">
-            <h1 class="projecttitle">Quantum Generative Adversarial Networks</a>
-            <p>Coming Soon...</p>
-        </div>
-        <div class="project">
-            <h1 class="projecttitle">Yiddish Phonetic Keyboard</a>
-            <p>Coming Soon...</p>
-        </div>
-        <div class="project">
-            <h1 class="projecttitle">myndful</a>
-            <p>Coming Soon...</p>
-        </div>
+            <h2> Publications
+            <div class="vertical-table">
+                <div class="table-row">
+                <div class="title">
+                    Benchmarking Metaheuristic-Integrated QAOA Against Quantum Annealing (2024)</div>
+                <div class="description"><p>The Quantum Approximate Optimization Algorithm (QAOA) is one of the most promising Noisy Intermediate Quantum (NISQ) Algorithms in solving combinatorial optimizations and displays potential over classical heuristic techniques. Unfortunately, QAOA’s performance depends on the choice of parameters and standard optimizers often fail to identify key parameters due to the complexity and mystery of these optimization functions. In this paper, we benchmark QAOA circuits modified with metaheuristic optimizers against classical and quantum heuristics to identify QAOA parameters. The experimental results reveal insights into the strengths and limitations of both Quantum Annealing and metaheuristic-integrated QAOA across different problem domains. The findings suggest that the hybrid approach can leverage classical optimization strategies to enhance the solution quality and convergence speed of QAOA, particularly for problems with rugged landscapes and limited quantum resources. Furthermore, the study provides guidelines for selecting the most appropriate approach based on the specific characteristics of the optimization problem at hand.</p>
+                    <div class="links">
+                        <a href="https://arxiv.org/pdf/2309.16796v3">paper</a>&nbsp;&nbsp;<a href="\media\slides\Benchmarking Metaheuristic-Integrated QAOA against Quantum Annealing.pdf">slides</a>&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=ROmDyJmA468&t=1s">video</a>
+                    </div>
+                    <div class="citation-container">
+                        Mazumder, A.R., Sen, A. and Sen, U. (2024) Benchmarking metaheuristic-integrated QAOA against Quantum Annealing, Lecture Notes in Networks and Systems, pp. 651–666. doi:10.1007/978-3-031-62269-4_42. </div>
+                </div>
+                </div>
+                <div class="table-row">
+                <div class="title">
+                    Differential Evolution Algorithm based Hyper-Parameters Selection of Transformer Neural Network Model for Load Forecasting (2023)</div>
+                <div class="description"><p>Accurate load forecasting plays a vital role in numerous sectors, but accurately capturing the complex dynamics of dynamic power systems remains a challenge for traditional statistical models. For these reasons, time-series models (ARIMA) and deep-learning models (ANN, LSTM, GRU, etc.) are commonly deployed and often experience higher success. In this paper, we analyze the efficacy of the recently developed Transformer-based Neural Network model in load forecasting. Transformer models have the potential to improve load forecasting because of their ability to learn long-range dependencies derived from their Attention Mechanism. We apply several metaheuristics namely Differential Evolution to find the optimal hyperparameters of the Transformer-based Neural Network to produce accurate forecasts. Differential Evolution provides scalable, robust, global solutions to non-differentiable, multi-objective, or constrained optimization problems. Our work compares the proposed Transformer-based Neural Network model integrated with different metaheuristic algorithms by their performance in load forecasting based on numerical metrics such as Mean Squared Error (MSE) and Mean Absolute Percentage Error (MAPE). Our findings demonstrate the potential of metaheuristic-enhanced Transformer-based Neural Network models in load forecasting accuracy and provide optimal hyperparameters for each model.</p>
+                    <div class="links">
+                        <a href="https://arxiv.org/pdf/2307.15299">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Meta-Transformer">code</a>&nbsp;&nbsp;<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O8QA5H">dataset</a>
+                    </div>
+                    <div class="citation-container">Sen, A., Rhik Mazumder, A., and Sen, U. 2023. Differential Evolution Algorithm based Hyper-Parameters Selection of Transformer Neural Network Model for Load Forecasting. In 2023 IEEE Symposium Series on Computational Intelligence (SSCI) (pp. 234-239).
+                        </div>
+                </div>
+                <div class="table-row">
+                    <div class="title">
+                        Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting (2023)</div>
+                    <div class="description"><p>Weather forecasting plays a vital role in numerous sectors, but accurately capturing the complex dynamics of weather systems remains a challenge for traditional statistical models. Apart from Auto Regressive time forecasting models like ARIMA, deep learning techniques (Vanilla ANNs, LSTM and GRU networks), have shown promise in improving forecasting accuracy by capturing temporal dependencies. This paper explores the application of metaheuristic algorithms, namely Genetic Algorithm (GA), Differential Evolution (DE), and Particle Swarm Optimization (PSO), to automate the search for optimal hyperparameters in these model architectures. Metaheuristic algorithms excel in global optimization, offering robustness, versatility, and scalability in handling non-linear problems. We present a comparative analysis of different model architectures integrated with metaheuristic optimization, evaluating their performance in weather forecasting based on metrics such as Mean Squared Error (MSE) and Mean Absolute Percentage Error (MAPE). The results demonstrate the potential of metaheuristic algorithms in enhancing weather forecasting accuracy and helps in determining the optimal set of hyper-parameters for each model. The paper underscores the importance of harnessing advanced optimization techniques to select the most suitable metaheuristic algorithm for the given weather forecasting task.</p>
+                        <div class="links">
+                            <a href="https://arxiv.org/pdf/2309.02600">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/ECTA">code</a>&nbsp;&nbsp;<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PJISJU">dataset</a>
+                        </div>
+                        <div class="citation-container">
+                            Sen, A.; Mazumder, A.; Dutta, D.; Sen, U.; Syam, P. and Dhar, S. (2023). Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting. In Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA; ISBN 978-989-758-674-3; ISSN 2184-3236, SciTePress, pages 238-245. DOI: 10.5220/0012187300003595</div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="title">
+                        An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem (2023)</div>
+                    <div class="description"><p>In this paper, we design, analyze, and evaluate a hybrid quantum algorithm for the metric traveling salesman problem (TSP). TSP is a well-studied NP-complete problem that many algorithmic techniques have been developed for, on both classic computers and quantum computers. The existing literature of algorithms for TSP are neither adaptive to input data nor suitable for processing medium-size data on the modern classic and quantum machines. In this work, we leverage the classic computers’ power (large memory) and the quantum computers’ power (quantum parallelism), based on the input data, to fasten the hybrid algorithm’s overall running time. Our algorithmic ideas include trimming the input data efficiently using a classic algorithm, finding an optimal solution for the post-processed data using a quantum-only algorithm, and constructing an optimal solution for the untrimmed data input efficiently using a classic algorithm. We conduct experiments to compare our hybrid algorithm against the state-of-the-art classic and quantum algorithms on real data sets. The experimental results show that our solution truly outperforms the others and thus confirm our theoretical analysis. This work provides insightful quantitative tools for people and compilers to choose appropriate quantum or classical or hybrid algorithms, especially in the NISQ (noisy intermediate-scale quantum) era, for NP-complete problems such as TSP.</p>
+                        <div class="links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10177447">paper</a>&nbsp;&nbsp;<a href="\media\slides\An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem Visual Model.pdf">slides</a>&nbsp;&nbsp;<a href="https://youtu.be/cQmbRSsT30E">video</a>
+                        </div>
+                        <div class="citation-container">
+                            Li, F., and Mazumder, A. 2023. An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem. In 2023 IEEE International Parallel and Distributed Processing Symposium (IPDPS) (pp. 768-778).</div>
+                </div>
+                <div class="table-row">
+                    <div class="title">
+                        Comparisons of Classic and Quantum String Matching Algorithms (2022)</div>
+                    <div class="description"><p>In this paper, we study the string matching problem. We design a quantum string-matching algorithm for noisy intermediate-scale quantum (NISQ) computers, given the current leading quantum processing units (QPUs) having no more than a few hundred qubits. We also compare the performance of classic algorithms and quantum algorithms under various combinations. Our study provides a comprehensive and quantitative guide for users to choose appropriate classic or quantum algorithms for their string matching problems.</p>
+                        <div class="links">
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3573834.3574498">paper</a>&nbsp;&nbsp;<a href="media\slides\Comparisons of Classical and Quantum String Matching Algorithms.pdf">slides</a>
+                        </div>
+                        <div class="citation-container">
+                            Gao, M., Huang, R., Mazumder, A., and Li, F. 2023. Comparisons of Classic and Quantum String Matching Algorithms✱. In Proceedings of the 4th International Conference on Advanced Information Science and System. Association for Computing Machinery.
+                        </div>
+                </div>
+            </div>
+            <h3> Projects (Hackathons, Math Modeling, Data Science)
+            <div class="vertical-table">
+                <div class="table-row">
+                    <div class="title">2Y2B (Tartanhacks 2024)</div>
+                    <div class="description"><p>2Y2B simplifies the way users receive their news. Users enter their keywords of interest, and several news APIs fetch recent peer-reviewed articles related to those topics. OpenAI's GPT-3.5 Turbo-16 LLM then summarizes the news articles into concise 3-5 minute texts, which Google Text-To-Speech converts into MP3 audio files for easy listening. Our product is also integrated into an app/website that remembers user preferences for a personalized experience.</p>
+                        <div class="links">
+                            <a href="media\slides\2Y2B - TartanHacks Presentation.pdf">slides</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/2Y2B">code</a>&nbsp;&nbsp;<a href="media\videos\2y2b.mp4">video</a>
+                        </div>
+                        <p> Done in collaboration with Michael Chen, Maximillian Chuang, and Praneel Varshney. </p>
+                        <p> This project placed in the Top 15 at TartanHacks. </p>
+                    </div>
+                    </div>
+                <div class="table-row">
+                <div class="title">Eco Bin (HackCMU 2023)</div>
+                <div class="description"><p>
+                    Eco Bin aimed at enhancing environmental sustainability by automatically sorting waste into recycling, compost, and trash. It utilized two types of sensors: a camera for computer vision and a depth camera to detect the shape of objects. Leveraging this data along with a custom-built deep learning model, the robotic trash can accurately classified 80% of tested objects, achieving a 95% accuracy on the training dataset. This software was integrated with a hardware solution that would automatically process and sort the respective waste.</p>
+                    <div class="links">
+                        <a href="media\documents\Eco_Bin.pdf">paper</a>&nbsp;&nbsp;<a href="media\slides\Hacks - CMU 2023.pdf">slides</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Eco-Bin">code</a>&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=8cbz_SyMVFQ">video</a>
+                    </div>
+                    <p> Done in collaboration with Mehul Goel, Anirudh Mani, and Steven Yang. </p> 
+                    <p> This project earned the Graduate Student Association cash prize at HackCMU 2023.</p>
+                </div>
+                </div>
+                <div class="table-row">
+                    <div class="title">Plane boarding and deplaning (IMMC 2023)</div>
+                    <div class="description"><p>This project addresses the optimization of airline boarding and disembarking procedures. Our team has developed a series of robust models to simulate and analyze these processes from a comprehensive perspective. By identifying key factors such as passenger walking speed, sitting and standing speed, luggage amount, and customer satisfaction, we created a model that predicts individual passenger behavior during boarding and disembarking. We evaluated common boarding methods, including Random, By Seat, and By Section, to determine the most time-efficient and feasible procedures. Our simulations incorporated various passenger demographics and aircraft models, including Narrow Body, Flying Wing, and Two-Entrance, Two-Aisle configurations. The results indicate that the By Seat method was the fastest for the Narrow Body aircraft, with an average boarding time of 32.6 minutes. The enclosed paper provides a detailed analysis of the performance of other boarding methods.</p>
+                        <div class="links">
+                            <a href="media\documents\immc_paper.pdf">paper</a>
+                        </div>
+                        <p> Done in collaboration with Simon Beyzerov, Aaron Tian, and Gracie Sheng </p>
+                    <p> This project earned finalist recognition at IMMC 2023. </p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="title">Lake Mead Reservoir (HiMCM 2022)</div>
+                    <div class="description"><p>Climate change and increased water demand have caused severe drought in Lake Mead, the largest U.S. reservoir, affecting 25 million people. This paper presents multiple predictive models for Lake Mead's water elevation, proposing a comprehensive model that accommodates complex volumetric relationships for advanced analyses. We analyze volumetric factors like inflow, outflow, and loss, guiding the creation of an adaptable model. Using a Seasonal Auto Regressive Integrated Moving Average (SARIMA) model on data from 2005-2020, we project future elevations and compare results to a linear regression model. Our enhanced approach integrates climate change impacts for more accurate predictions. We also propose a two-phase water reuse plan and recommend conservation practices, demonstrated through a case study highlighting effectiveness and metrics.</p>
+                        <div class="links">
+                            <a href="media/documents/HiMCM.pdf">paper</a>
+                        </div>
+                        <p> Done in collaboration with Simon Beyzerov, Aaron Tian, and Gracie Sheng </p>
+                        <p> This project earned honorable mention recognition at HiMCM 2022. </p>
+                    </div>
+                </div>
+            </div>
+        
+            <h3> Ongoing Work
+                <div class="vertical-table">
+                    <div class="table-row">
+                        <div class="title">
+                            Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2024) </div>
+                        <div class="description"><p>Several articles and books adequately cover quantum computing concepts, such as gate/circuit model (and Quantum Approximate Optimization Algorithm, QAOA), Adiabatic Quantum Computing (AQC), and Quantum Annealing (QA). However, they typically stop short of accessing quantum hardware and solve numerical problem instances. This tutorial offers a quick hands-on introduction to solving Quadratic Unconstrained Binary Optimization (QUBO) problems on currently available quantum computers. We cover both IBM and D-Wave machines: IBM utilizes a gate/circuit architecture, and D-Wave is a quantum annealer. We provide examples of three canonical problems (Number Partitioning, Max-Cut, Minimum Vertex Cover), and two models from practical applications (from cancer genomics and a hedge fund portfolio manager, respectively). An associated GitHub repository provides the codes in five companion notebooks. Catering to undergraduate and graduate students in computationally intensive disciplines, this article also aims to reach working industry professionals seeking to explore the potential of near-term quantum applications.</p>
+                            <div class="links">
+                                <a href="media\documents\Solving_QUBOs_INFORMS_Version_for_Reviews.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <h3> Educational Outreach
+                <div class="vertical-table">
+                    <div class="table-row">
+                        <div class="title">
+                            NousQuest (2023 - Present) </div>
+                        <div class="description"><p>
+                            Mathematics is often seen by students as unintuitive and tedious, which can hinder their academic and career prospects. NousQuest was created to address this issue by leveraging a unique problem bank architecture and machine learning to offer interactive and personalized gamification features, making math learning engaging and enjoyable for students.</p>
+                            <div class="links">
+                                <a href="media/documents/Executive Summary and Mini Business Plan V5.docx (1).pdf">executive summary</a>&nbsp;&nbsp;<a href="media\slides\Pitch Slides.pdf">pitch slides</a>&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=9rBQHJ-8dpI">video pitch</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="title">
+                            MathEx (2019 - Present) </div>
+                        <div class="description"><p>
+                            <a href="https://mathex.us/">MathEx</a> is a 501(c)(3) non-profit organization dedicated to fostering interest in competitive mathematics and related fields. Our YouTube channel features over 160 videos, with more than 75,000 views and 1,200 subscribers. Additionally, we conduct in-person courses and training camps throughout the eastern Massachusetts region.</p>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/@mathex7226/featured?sub_confirmation=1" class="email-link">
+                                    <img src="media/images/mathex.png" alt="MathEx" style="width: 150px; height: auto;">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const titles = document.querySelectorAll('.title');
+                
+                // Initially hide all descriptions
+                const descriptions = document.querySelectorAll('.description');
+                descriptions.forEach(description => {
+                    description.style.display = 'none';
+                });
+
+                titles.forEach(title => {
+                    title.addEventListener('click', function() {
+                    const description = this.nextElementSibling;
+                    
+                    if (description.style.display === 'block') {
+                        description.style.display = 'none';
+                    } else {
+                        description.style.display = 'block';
+                    }
+                    });
+                });
+                });
+            </script>
+
     </body>
 </html>
