@@ -20,17 +20,62 @@
     </div>
     <div class="blogcontainer">
         <div class="blogpost">
-            <h2 class="blogpost-title">First Post</h2>
-            <div class="blogpost-meta">July 18, 2024</div>
+            <h2 class="blogpost-title">Citadel Datathon</h2>
+            <div class="blogpost-meta">August 6, 2024</div>
             <div class="blogpost-content">
                 <p>
-                It is what the title says.
-                <!-- Finally made my own personal website, after much procrastination. I noticed that most other CS kids have blogs on their sites, so just included one as well, but I
-                will probably forget about in a month. Submitted the Shipment Rerouting Paper, and went to IBM Cambridge to provide update for the Learning DGM project. I have to meet with Quantum Technologies Group
-                regarding the quantum entanglement detection project. Aside from work, I watched The Boys Season 4 Finale and my mom got mad at me for only taking 700 steps today, and didn't make me dinner [rip :( ]. -->
+                    We got 2nd at Citadel's Correlation One and Citadel Securities Summer Invitational Datathon!<br>
+                    <br>
+                    This was my first datathon, and it was quite a wild experience. Although the problem statement and datasets were released on Monday morning, we didn’t finalize our ideas until Friday—ironically, the first idea I had. We had team members in three different time zones (EST, PST, and SGT), so we mostly worked together between 3-4 AM EST (goodbye, sleep!).
+
+All my teammates had full-time internships, while I was juggling two concurrent research projects. The day before the submission, I spent the evening partying with friends and ended up working until 5 AM. I then woke up at 9 AM and worked straight through to the 5 PM submission deadline. My heart nearly stopped until we received the confirmation receipt!<br>
+                    <br>
+                    <img src="media/images/datathonsubmissiontime.png" alt="Description of image" height="65">
+                    <br>
+                    Overall, it was completely worth it though. That being said I took a couple key lessons from this experience:
+                    <ul>
+                        <li>Keep it simple. We took so long to finalize a project, since we kept on trying to incorporate advanced techniques, instead of just identifying basic patterns and branching from there.</li>
+                        <li>Don't overdo it. We initally aimed to create a 15 page report, but couldn't gauge how much content was required and ended creating our 24 page monstrosity.</li>
+                        <li>Use your team's strengths. We leveraged the unique backgrounds of each team member to develop the best parts of the paper. The pairs trading algorithm, developed from Pi Rey (The GOAT)'s quant internship, was undoubtedly the crown jewel of our report.
+                        </li>
+                    </ul>
+                    Thanks to Pi Rey Low, Julia Huang and Peter Zheng for their contributions to this work, and I will aim for Gold next time!
                 </p>
             </div>
+            <a class="read-more" onclick="toggleBlogPost(this)">Read more</a>
+        </div
+        <div class="blogpost">
+            <h2 class="blogpost-title">First Post</h2>
+            <div class="blogpost-meta">July 24, 2024</div>
+            <div class="blogpost-content">
+                <p>
+                    I finally made my own website after much procrastination and am quite happy with the result. I might update this blog after major events or just forget about it.<br>
+                    <br>
+                    This summer, I don't have a full-time internship at a startup or corporate program, which is a bit disappointing. The closest thing is my research with Dr. Arkopal Dutt at IBM. Although visiting the Cambridge IBM office once a week is cool, it doesn't feel like a full-time internship. That said, I've been staying busy.<br>
+                    <br>
+                    I've been working on three projects this summer:<br>
+                    <ul>
+                        <li><b>Learning Discrete Graphical Models</b>: I am working with Dr. Arkopal Dutt of IBM Cambridge to develop learning algorithms for discrete graphical models, requiring me to brush up on probability and study probabilistic graphical models. We're developing a Julia library for these novel methods and aim to publish a paper by December.</li>
+                        <li><b>SDP Formulations for Entanglement</b>: Collaborating with Professors Javier Pena, Sridhar Tayur, and Dr. Vikesh Siddhu, I'm developing and testing SDP formulations for entanglement. This project involves a deep understanding of quantum entanglement and familiarity with SDP modeling software.</li>
+                        <li><b>Ship Rererouting Problem</b>: I worked with Dr. Fei Li and intern Max Zhao on "Improved Classical and Quantum Algorithms for Shipment Rerouting Problems." This advanced my previous work on the Metric Traveling Salesman Problem. We've submitted the paper to ALENEX25 and hope for acceptance.</li>
+                    </ul>     
+                    Outside of research, I'm working with Dr. Elias Towe, Rohan Jain, Ryan Wang, and Param Sehrawat to set up Quantum Computing @ CMU, practicing LeetCode, and applying to quant positions. For fun, I've been doing chess puzzles, binging shows, and spending time with my family.
+                </p>
+            </div>
+            <a class="read-more" onclick="toggleBlogPost(this)">Read more</a>
         </div
     </div>
+    <script>
+        function toggleBlogPost(linkElement) {
+            var content = linkElement.previousElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                linkElement.textContent = "Read less"; // Optional: change link text
+            } else {
+                content.style.display = "none";
+                linkElement.textContent = "Read more"; // Optional: change link text
+            }
+        }
+    </script>
 </body>
 </html>

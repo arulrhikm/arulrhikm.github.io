@@ -15,10 +15,12 @@ body {
   font-family: 'Times New Roman', Times, serif;
   color: black;
 }
+
 .citation-container a {
   color: blue;
   text-decoration: none;
 }
+
 .citation-container a:hover {
   text-decoration: underline;
 }
@@ -26,48 +28,48 @@ body {
 .vertical-table {
   width: 100%;
   margin: 0 auto;
-  border-collapse: collapse; /* Ensure borders between cells are collapsed */
-  font-family: 'Open Sans', sans-serif; /* Change font to Times New Roman */
-  font-size: 18px; /* Increase font size */
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 
 /* Styling for each row in the vertical table */
 .table-row {
-  border-bottom: 1px solid #ddd; /* Border between rows */
+  border-bottom: 1px solid #ddd;
 }
 
 /* Styling for title cells */
 .title {
   cursor: pointer;
-  padding: 15px; /* Padding for better appearance */
+  padding: 15px;
   background-color: #f2f2f2;
-  border-bottom: 1px solid #ddd; /* Border between title and description */
-  color: #758BFD; /* Darker text color */
-  text-decoration: none; /* Remove underline by default */
-  transition: color 0.3s, text-decoration 0.3s, padding 0.3s; /* Smooth transition */
+  border-bottom: 1px solid #ddd;
+  color: #758BFD;
+  text-decoration: none;
+  transition: color 0.3s, padding 0.3s;
   font-weight: normal;
 }
 
 .title:hover {
-  color: #758BFD; /* Darker color on hover */
-  padding: 18px; /* Increase padding on hover */
+  color: #758BFD;
+  padding: 18px;
   font-weight: bold;
 }
 
 /* Styling for description cells */
 .description {
-  display: none; /* Hide descriptions by default */
-  padding: 15px; /* Increase padding for better appearance */
+  display: none;
+  padding: 15px;
   color: #000000;
   background-color: #ffffff;
   font-weight: normal;
-  font-size: 14px; /* Smaller font size */
+  font-size: 14px;
 }
 
 /* Optional: Add alternating row colors for readability */
 .table-row:nth-child(even) .title,
 .table-row:nth-child(even) .description {
-  background-color: #ffffff; /* Alternate row colors */
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -142,7 +144,7 @@ body {
 }
 
 .topnav .main:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 /* Navigation Links */
@@ -159,11 +161,10 @@ body {
 }
 
 .nav a:hover {
-  color:#f4f4f4;
+  color: #f4f4f4;
   background-color: #AEB8FE;
-  text-decoration: none; /* Underline on hover */
+  text-decoration: none;
   padding: 5px;
-
 }
 
 /* Link Styling */
@@ -177,7 +178,7 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 a:active {
@@ -350,6 +351,83 @@ footer p {
   margin-top: 10px;
 }
 
+/* Blog Container */
+.blogcontainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Blog Post Container */
+.blogpost {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove Bottom Border for Last Blog Post */
+.blogpost:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Blog Post Title */
+.blogpost-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.blogpost-title:hover {
+  color: #0073e6;
+}
+
+/* Blog Post Metadata */
+.blogpost-meta {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Blog Post Content */
+.blogpost-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  display: none; /* Hide content by default */
+}
+
+/* Links inside the content */
+.blogpost-content a {
+  color: #0073e6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blogpost-content a:hover {
+  color: #005bb5;
+}
+
+/* Read More Link */
+.read-more {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.read-more:hover {
+  color: #005bb5;
+}
 /* Media Queries */
 @media (max-width: 768px) {
   body {
@@ -380,40 +458,6 @@ footer p {
     text-align: center;
   }
 
-  .blogcontainer {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .blogpost {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .blogpost:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-
-  .blogpost-title {
-    font-size: 24px;
-    color: #333;
-  }
-
-  .blogpost-meta {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .blogpost-content {
-    font-size: 18px;
-  }
-
   /* Timeline Adjustments for Mobile */
   .timeline {
     padding: 20px 0;
@@ -442,13 +486,13 @@ footer p {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    border: 1px solid #ddd; /* Border around the entire table */
+    border: 1px solid #ddd;
   }
 
   th, td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #ddd; /* Border for cells */
+    border: 1px solid #ddd;
   }
 
   th {
