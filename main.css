@@ -368,6 +368,13 @@ footer p {
   border-bottom: 1px solid #eee;
 }
 
+/* Blog Post Container */
+.blogpost {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
 /* Remove Bottom Border for Last Blog Post */
 .blogpost:last-child {
   border-bottom: none;
@@ -382,12 +389,8 @@ footer p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   transition: color 0.3s ease;
-  cursor: pointer; /* Indicate clickable */
 }
 
-.blogpost-title:hover {
-  color: #0073e6;
-}
 
 /* Blog Post Metadata */
 .blogpost-meta {
