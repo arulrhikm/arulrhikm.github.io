@@ -52,8 +52,7 @@ body {
 
 .title:hover {
   color: #758BFD;
-  padding: 18px;
-  font-weight: bold;
+  padding: 25px;
 }
 
 /* Styling for description cells */
@@ -157,6 +156,7 @@ body {
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
+  padding: 5px;
   text-transform: uppercase;
 }
 
