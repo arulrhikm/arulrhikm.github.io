@@ -18,6 +18,15 @@
             <h2> Publications
             <div class="vertical-table">
                 <div class="table-row">
+                    <div class="title">
+                        Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2024) </div>
+                    <div class="description"><p>Several articles and books adequately cover quantum computing concepts, such as gate/circuit model (and Quantum Approximate Optimization Algorithm, QAOA), Adiabatic Quantum Computing (AQC), and Quantum Annealing (QA). However, they typically stop short of accessing quantum hardware and solve numerical problem instances. This tutorial offers a quick hands-on introduction to solving Quadratic Unconstrained Binary Optimization (QUBO) problems on currently available quantum computers. We cover both IBM and D-Wave machines: IBM utilizes a gate/circuit architecture, and D-Wave is a quantum annealer. We provide examples of three canonical problems (Number Partitioning, Max-Cut, Minimum Vertex Cover), and two models from practical applications (from cancer genomics and a hedge fund portfolio manager, respectively). An associated GitHub repository provides the codes in five companion notebooks. Catering to undergraduate and graduate students in computationally intensive disciplines, this article also aims to reach working industry professionals seeking to explore the potential of near-term quantum applications.</p>
+                        <div class="links">
+                            <a href="media\documents\Solving_QUBOs_with_Quantum.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
                 <div class="title">
                     Benchmarking Metaheuristic-Integrated QAOA Against Quantum Annealing (2024)</div>
                 <div class="description"><p>The Quantum Approximate Optimization Algorithm (QAOA) is one of the most promising Noisy Intermediate Quantum (NISQ) Algorithms in solving combinatorial optimizations and displays potential over classical heuristic techniques. Unfortunately, QAOA’s performance depends on the choice of parameters and standard optimizers often fail to identify key parameters due to the complexity and mystery of these optimization functions. In this paper, we benchmark QAOA circuits modified with metaheuristic optimizers against classical and quantum heuristics to identify QAOA parameters. The experimental results reveal insights into the strengths and limitations of both Quantum Annealing and metaheuristic-integrated QAOA across different problem domains. The findings suggest that the hybrid approach can leverage classical optimization strategies to enhance the solution quality and convergence speed of QAOA, particularly for problems with rugged landscapes and limited quantum resources. Furthermore, the study provides guidelines for selecting the most appropriate approach based on the specific characteristics of the optimization problem at hand.</p>
@@ -134,11 +143,21 @@
                 <div class="vertical-table">
                     <div class="table-row">
                         <div class="title">
-                            Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2024) </div>
-                        <div class="description"><p>Several articles and books adequately cover quantum computing concepts, such as gate/circuit model (and Quantum Approximate Optimization Algorithm, QAOA), Adiabatic Quantum Computing (AQC), and Quantum Annealing (QA). However, they typically stop short of accessing quantum hardware and solve numerical problem instances. This tutorial offers a quick hands-on introduction to solving Quadratic Unconstrained Binary Optimization (QUBO) problems on currently available quantum computers. We cover both IBM and D-Wave machines: IBM utilizes a gate/circuit architecture, and D-Wave is a quantum annealer. We provide examples of three canonical problems (Number Partitioning, Max-Cut, Minimum Vertex Cover), and two models from practical applications (from cancer genomics and a hedge fund portfolio manager, respectively). An associated GitHub repository provides the codes in five companion notebooks. Catering to undergraduate and graduate students in computationally intensive disciplines, this article also aims to reach working industry professionals seeking to explore the potential of near-term quantum applications.</p>
+                            Improved Classical and Quantum Algorithms for the Shipment Rerouting Problems (2024) </div>
+                        <div class="description"><p>We study a shipment rerouting problem, which generalizes many NP-hard routing problems and packing problems. This problem has ample and practical applications in vehicle scheduling and transportation logistics. Given a network of hubs, a set of shipments needs must be delivered from their sources to their respective destinations by trucks. The objective is to select a set of transportation means and schedule travel routes so that the total cost is minimized. This problem is NP-hard and only classical approximation algorithms were known to have been studied for some of its NP-hard variants. Prior to our research, a quantum algorithm, based on the Ising model, generates an exact solution for a variant of this problem. In this work, we design classical exact and approximation algorithms as well as a quantum algorithm for this problem. The algorithms that we design use novel mathematical programming formulations and/or new insights on solving packing and routing problems simultaneously. Such algorithms take advantage of the network infrastructure, the shipments, and transportation means. We give provable running time bounds. We conduct extensive experiments and show that our classical solutions are empirically better than the up-to-date quantum algorithms in the noisy intermediate-scale quantum (NISQ) era.</p>
                             <div class="links">
-                                <a href="media\documents\Solving_QUBOs_INFORMS_Version_for_Reviews.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                                <a href="media\documents\Solving_QUBOs_INFORMS_Version_for_Reviews.pdf">paper</a>
                             </div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="title">
+                            A Comparative Analysis of Quantum Approaches for Solving the Electronic Structure Problem (2024) </div>
+                        <div class="description"><p>In this project, we tackle the electronic structure problem, an NP-hard challenge in computational chemistry involving determining the distribution and energy of electrons a given molecular system. Solving this problem is essential for understanding material behavior at the atomic level and has far-reaching applications in material design, photovoltaics, nanotechnology, and drug discovery. Due to the high complexity of electronic structure calculations, classical methods face computational limitations, but recent quantum computing advances show promising potential for addressing this problem within quantum simulation. Our primary goal is to accurately and efficiently estimate a molecular system's ground state energy given its electronic Hamiltonian. The Variational Quantum Eigensolver (VQE) is the leading algorithm in this area, favored for its low circuit depth, variational guarantees, and hybrid quantum-classical approach, making it both practical for Noisy Intermediate-Scale Quantum (NISQ) devices and potentially capable of achieving quantum advantage. Alternatively, the Quantum Annealing Eigensolver (QAE), tailored for D-Wave’s adiabatic quantum computers, bypasses some of VQE’s challenges in ansatz construction and nonconvex optimization but grapples with limitations in QUBO scaling and accuracy. A further promising but less explored option, the Eigenvalue Estimation (EE) algorithm, combines Quantum Phase Estimation and Quantum Amplitude Estimation to provide a quadratic speedup over leading classical algorithms. 
+
+                            In our work, we implement VQE with various optimizers (including with a sequential triple-hybrid approach in which quantum annealing is used to optimize VQE’s ansatz parameters), along with QAE, EE, and the classical Hartree-Fock method as a baseline. Each algorithm's speed and accuracy are then tested on a diverse set of molecules, allowing us to analyze their performance in relation to molecular properties and algorithmic assumptions. Ultimately, our findings are summarized in a practical guide for industry users, such as those in pharmaceuticals and chemical manufacturing, to help them select the most suitable algorithm for determining a molecule’s electronic structure based on its properties.
+                            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +166,7 @@
                 <div class="vertical-table">
                     <div class="table-row">
                         <div class="title">
-                            NousQuest (2023 - Present) </div>
+                            NousQuest (2023 - 2024) </div>
                         <div class="description"><p>
                             Mathematics is often seen by students as unintuitive and tedious, which can hinder their academic and career prospects. NousQuest was created to address this issue by leveraging a unique problem bank architecture and machine learning to offer interactive and personalized gamification features, making math learning engaging and enjoyable for students.</p>
                             <div class="links">
@@ -157,7 +176,7 @@
                     </div>
                     <div class="table-row">
                         <div class="title">
-                            MathEx (2019 - Present) </div>
+                            MathEx (2019 - 2024) </div>
                         <div class="description"><p>
                             <a href="https://mathex.us/">MathEx</a> is a 501(c)(3) non-profit organization dedicated to fostering interest in competitive mathematics and related fields. Our YouTube channel features over 160 videos, with more than 75,000 views and 1,200 subscribers. Additionally, we conduct in-person courses and training camps throughout the eastern Massachusetts region.</p>
                             <div class="social-icons">
