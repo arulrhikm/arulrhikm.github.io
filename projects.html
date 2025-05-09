@@ -19,10 +19,19 @@
             <div class="vertical-table">
                 <div class="table-row">
                     <div class="title">
-                        Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2024) </div>
+                        Quantum Annealing Approaches to Solving the Shipment Rerouting Problems (2025) </div>
+                    <div class="description"><p>In this paper, we study a shipment rerouting problem (SRP) which generalizes many NP-hard sequencing and packing problems. A SRP's solution has ample practical applications in vehicle scheduling and transportation logistics. Given a network of hubs, a set of goods must be delivered by trucks from their source-hubs to their respective destination-hubs. The objective is to select a set of trucks and to schedule these trucks' routes so that the total cost is minimized. The problem SRP is NP-hard; only classical approximation algorithms have been known for some of its NP-hard variants. In this work, we design classical algorithms and quantum annealing algorithms for this problem with various capacitated trucks. The algorithms that we design use novel mathematical programming formulations and new insights into solving sequencing and packing problems simultaneously. Such formulations take advantage of network infrastructure, shipments, and truck capacities. We conduct extensive experiments showing that in various scenarios, the quantum annealing solver generates near-optimal or optimal solutions much faster than the classical algorithm solver.</p>
+                        <div class="links">
+                            <a href="https://arxiv.org/pdf/2501.05624">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="title">
+                        Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2025) </div>
                     <div class="description"><p>Several articles and books adequately cover quantum computing concepts, such as gate/circuit model (and Quantum Approximate Optimization Algorithm, QAOA), Adiabatic Quantum Computing (AQC), and Quantum Annealing (QA). However, they typically stop short of accessing quantum hardware and solve numerical problem instances. This tutorial offers a quick hands-on introduction to solving Quadratic Unconstrained Binary Optimization (QUBO) problems on currently available quantum computers. We cover both IBM and D-Wave machines: IBM utilizes a gate/circuit architecture, and D-Wave is a quantum annealer. We provide examples of three canonical problems (Number Partitioning, Max-Cut, Minimum Vertex Cover), and two models from practical applications (from cancer genomics and a hedge fund portfolio manager, respectively). An associated GitHub repository provides the codes in five companion notebooks. Catering to undergraduate and graduate students in computationally intensive disciplines, this article also aims to reach working industry professionals seeking to explore the potential of near-term quantum applications.</p>
                         <div class="links">
-                            <a href="media\documents\Solving_QUBOs_with_Quantum.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                            <a href="https://arxiv.org/pdf/2401.08989">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
                         </div>
                     </div>
                 </div>
@@ -83,6 +92,15 @@
             <h3> Projects (Hackathons, Math Modeling, Data Science)
             <div class="vertical-table">
                 <div class="table-row">
+                    <div class="title">Alice and the Bobs (YQuantum 2025)</div>
+                    <div class="description"><p>We address the challenge of reconstructing and denoising quantum states from Wigner functions using both optimization techniques and machine learning. First, we implemented a contour-based sampling algorithm to enhance density matrix reconstruction via least squares fitting, solving the resulting convex problem with SCS and CBC solvers. We demonstrated strong performance on simulated and real quantum states, including Fock, coherent, and cat states. Next, we analyzed superconducting noise models, constructing a large dataset of noisy Wigner functions with five distinct noise types. To denoise these, we employed a U-Net convolutional neural network, achieving high-fidelity reconstructions of heavily corrupted states. Our results highlight the effectiveness of combining physically informed sampling with deep learning for quantum state reconstruction.<div class="links">
+                            <a href="media\documents\yquantum-paper.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/Haadi-Khan/YQuantum2025-Alice-Bob_Challenge">code</a>&nbsp;&nbsp;<a href="media\documents\yquantum-presentation.pdf">presentation</a>
+                        </div>
+                        <p> Done in collaboration with Haadi Khan, Tanmay Neema, Ryan O'Farrell and Alice Wang. </p>
+                        <p> This project won 1st in the Alice and Bob track at YQuantum 2025 and qualifed us for the The Yale Quantum Institute Grand Prize where we won 2nd place overall and were invited to present our work at our work at the QuantumCT Industry Collaboration Forum. </p>
+                    </div>
+                    </div>
+                <div class="table-row">
                     <div class="title">Fast Food, Fast Growth: The Health Implications of Processed Diets <br> (2024 Correlation One and Citadel Securities Summer Invitational Datathon)</div>
                     <div class="description"><p>Our project investigates the links between diet, health, and economics, focusing on the obesity epidemic in the US. With over 40% of adults affected by obesity, largely due to high consumption of processed foods, this issue not only impacts individual health but also imposes a significant financial burden on the healthcare system. We analyze how processed food consumption relates to obesity and financial markets using statistical tests and quantitative models.
 
@@ -141,15 +159,6 @@
         
             <h3> Ongoing Work
                 <div class="vertical-table">
-                    <div class="table-row">
-                        <div class="title">
-                            Improved Classical and Quantum Algorithms for the Shipment Rerouting Problems (2024) </div>
-                        <div class="description"><p>We study a shipment rerouting problem, which generalizes many NP-hard routing problems and packing problems. This problem has ample and practical applications in vehicle scheduling and transportation logistics. Given a network of hubs, a set of shipments needs must be delivered from their sources to their respective destinations by trucks. The objective is to select a set of transportation means and schedule travel routes so that the total cost is minimized. This problem is NP-hard and only classical approximation algorithms were known to have been studied for some of its NP-hard variants. Prior to our research, a quantum algorithm, based on the Ising model, generates an exact solution for a variant of this problem. In this work, we design classical exact and approximation algorithms as well as a quantum algorithm for this problem. The algorithms that we design use novel mathematical programming formulations and/or new insights on solving packing and routing problems simultaneously. Such algorithms take advantage of the network infrastructure, the shipments, and transportation means. We give provable running time bounds. We conduct extensive experiments and show that our classical solutions are empirically better than the up-to-date quantum algorithms in the noisy intermediate-scale quantum (NISQ) era.</p>
-                            <div class="links">
-                                <a href="media\documents\Solving_QUBOs_INFORMS_Version_for_Reviews.pdf">paper</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="table-row">
                         <div class="title">
                             A Comparative Analysis of Quantum Approaches for Solving the Electronic Structure Problem (2024) </div>
