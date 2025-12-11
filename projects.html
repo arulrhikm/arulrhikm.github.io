@@ -105,6 +105,27 @@
             <h3> Projects (Hackathons, Math Modeling, Data Science)
             <div class="vertical-table">
                 <div class="table-row">
+                    <div class="title" id="parallel-pauli-paths"> Parallelizing Pauli Paths: GPU-Accelerated Quantum Circuit Simulation (15-418 Final Project)</div>
+                    <div class="description">We present a GPU-accelerated implementation of the Pauli path propagation
+                    algorithm for quantum circuit simulation. Our CUDA implementation achieves speedups of up to 626× over a
+                    single-threaded CPU baseline on circuits with 1000+ initial Pauli words, with an average speedup of 213×
+                    across our stress test suite. Key contributions include a multi-block dynamic work distribution algorithm,
+                    efficient inter-block coordination through word-count-only transfers, and parallel truncation using prefix
+                    sums.<p><div class="links">
+                            <a href="https://arulrhikm.github.io/Parallelizing-Pauli-Paths/index.html">website</a>&nbsp;&nbsp;<a href="https://arulrhikm.github.io/Parallelizing-Pauli-Paths/proposal.html">proposal</a>&nbsp;&nbsp;<a href="https://arulrhikm.github.io/Parallelizing-Pauli-Paths/milestone.html">milestone</a>&nbsp;&nbsp;<a href="media\documents\15_418_Final_Report.pdf">report</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Parallelizing-Pauli-Paths">github</a>
+                        </div>
+                        <p> Done in collaboration with Daniel Ragazzo. </p>
+                    </div>
+                    </div>
+                <div class="table-row">
+                    <div class="title" id="quantum-dgm"> QuantumDGM: Quantum Circuits for Discrete Graphical Models (10-417 Final Project)</div>
+                    <div class="description">We introduce a dual-mode quantum sampling framework for Markov random fields: amplitude encoding for small models (n ≤ 10) and variational circuit compression for larger ones (n > 10), achieving 17× to 8,738× parameter reduction with fidelities of 0.65–0.99. Honest benchmarking shows computational costs match classical methods when both access the full distribution, but quantum sampling provides superior statistical properties: genuine independence (ESS 98% vs. 10–15% for MCMC), zero burn-in, and 6.5× Monte Carlo variance reduction.<p><div class="links">
+                            <a href="media/documents/10_417_Midway_Report.pdf">proposal</a>&nbsp;&nbsp;<a href="media\documents\10_417_Final_Report.pdf">report</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/QuantumDGM/tree/main#">github</a>
+                        </div>
+                        <p> Done in collaboration with Bryan Zhang. </p>
+                    </div>
+                    </div>
+                <div class="table-row">
                     <div class="title" id="yquantum">Alice and the Bobs (YQuantum 2025)</div>
                     <div class="description"><p>We address the challenge of reconstructing and denoising quantum states from Wigner functions using both optimization techniques and machine learning. First, we implemented a contour-based sampling algorithm to enhance density matrix reconstruction via least squares fitting, solving the resulting convex problem with SCS and CBC solvers. We demonstrated strong performance on simulated and real quantum states, including Fock, coherent, and cat states. Next, we analyzed superconducting noise models, constructing a large dataset of noisy Wigner functions with five distinct noise types. To denoise these, we employed a U-Net convolutional neural network, achieving high-fidelity reconstructions of heavily corrupted states. Our results highlight the effectiveness of combining physically informed sampling with deep learning for quantum state reconstruction.<div class="links">
                             <a href="media/documents/yquantum-paper.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/Haadi-Khan/YQuantum2025-Alice-Bob_Challenge">code</a>&nbsp;&nbsp;<a href="media/documents/yquantum-presentation.pdf">presentation</a>
