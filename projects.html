@@ -105,6 +105,16 @@
             <h3> Projects (Hackathons, Math Modeling, Data Science)
             <div class="vertical-table">
                 <div class="table-row">
+                    <div class="title" id="IQuHacks">The Born Rule Breakers (MIT IQuHacks 2026)</div>
+                    <div class="description"><p>We address the challenge of solving the Low Autocorrelation Binary Sequence (LABS) problem using a quantum-enhanced hybrid optimization framework. First, we implemented Pauli Correlation Encoding (PCE), a NISQ-friendly scheme that maps binary variables to quantum observable expectations, reducing qubit requirements from O(n) to O(√n) while mitigating barren plateaus. We integrated this encoding with a classical Memetic Tabu Search (MTS) algorithm to form a hybrid PCE–MTS pipeline. Benchmarking against standalone MTS under equal computational budgets, we observed a 16.72% improvement in merit factor, and a 5.86% improvement even when the classical method was allocated ten times more function evaluations. To maximize performance, we implemented end-to-end GPU residency, combining CUDA-Q–based quantum state-vector simulation with CuPy-accelerated classical optimization, and parallelized parameter-shift gradients and energy evaluations via vectorized GPU kernels. Our results demonstrate a practical quantum advantage for combinatorial optimization in the NISQ regime, with runtime scaling of O(1.31^n), competitive with and in some cases outperforming state-of-the-art classical heuristics.<div class="links">
+                            <a href="media/documents/NVIDIA_PRD.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/Haadi-Khan/2026-NVIDIA">code</a>&nbsp;&nbsp;<a href="media/slides/NVIDIA_PRESENTATION.pdf>presentation</a>
+                        </div>
+                        <p> Done in collaboration with Haadi Khan, Steve Cao and Alice Wang. </p>
+                        <p> This project won 2nd in the NVIDIA track at MIT IQuHacks 2026. </p>
+                    </div>
+                    </div>
+                <div class="table-row">
+                <div class="table-row">
                     <div class="title" id="parallel-pauli-paths"> Parallelizing Pauli Paths: GPU-Accelerated Quantum Circuit Simulation (15-418 Final Project)</div>
                     <div class="description">We present a GPU-accelerated implementation of the Pauli path propagation
                     algorithm for quantum circuit simulation. Our CUDA implementation achieves speedups of up to 626× over a
@@ -208,7 +218,7 @@
                             <p>
                                 In this work we construct algorithms for estimating properties of general matrix functions based on product formulae, with applications to tasks like quantum phase estimation and quantum linear systems. The core innovation combines Trotterization with Richardson extrapolation, enabling exponential improvements in error scaling via classical post-processing compared to product-formulae approaches, without increasing quantum circuit depth. We also extend the method to a partially randomized scheme—mixing deterministic product formulas and randomized unitaries—which improves performance for systems where Hamiltonian decompositions are dominated by a few terms, such as those arising in quantum chemistry. Overall, the algorithm has low circuit depth and only one ancillary qubit potentially making it well-suited for early fault-tolerant quantum devices.
                                 <div class="links">
-                                <a href="media/slides/interim1-presentation.pdf">presentation 1</a>&nbsp;&nbsp;<a href="media/slides/interim2-presentation.pdf">presentation 2</a>&nbsp;&nbsp;<a href="media/documents/final_presentation.pdf">final presentation</a>&nbsp;&nbsp;<a href="media/documents/poster.pdf">poster</a>&nbsp;&nbsp;<a href="media/documents/SURF_final_report.pdf">paper draft</a>
+                                <a href="media/slides/interim1-presentation.pdf">presentation 1</a>&nbsp;&nbsp;<a href="media/slides/interim2-presentation.pdf">presentation 2</a>&nbsp;&nbsp;<a href="media/documents/final_presentation.pdf">final presentation</a>&nbsp;&nbsp;<a href="media/documents/poster.pdf">poster</a>&nbsp;&nbsp;<a href="media/documents/tqc2026-paper419.pdf">TQC Extended Abstract</a>&nbsp;&nbsp;<a href="media/documents/tqc2026-paper419-technical_manuscript.pdf">TQC Paper</a>
                                 </div> 
                             </p>
                         </div>
