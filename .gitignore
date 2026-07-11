@@ -1,0 +1,9 @@
+# LaTeX build artifacts (root only)
+/*.aux
+/*.fdb_latexmk
+/*.fls
+/*.log
+/*.out
+/*.synctex.gz
+/arul_rhik_mazumder_cv.pdf
+/cv/build-info.json

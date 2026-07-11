@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications — Arul Rhik Mazumder</title>
+    <meta name="description" content="Publications and ongoing research by Arul Rhik Mazumder.">
+    <link rel="icon" href="media/images/headshot.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="site-nav">
+            <a class="site-name" href="index.html">Arul Rhik Mazumder</a>
+            <div class="nav-links">
+                <a href="index.html">About</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="projects.html">Projects</a>
+                <a href="cv/">CV</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="page-title">Publications</h1>
+    <p class="page-subtitle">Click a title to expand the abstract. Hackathons and outreach are on the <a href="projects.html">Projects</a> page.</p>
+
+    <h2 class="section-heading">Ongoing Work</h2>
+    <div class="work-list">
+        <div class="work-item">
+            <div class="work-title">T-Count Lower Bounds for Diagonal Third-Level Gates via Amy&ndash;Mosca Moments (2026)</div>
+            <div class="work-body">
+                <p class="work-meta">In progress &middot; with M. Mosca, V. Gheorghiu &middot; IQC URA 2026</p>
+                <p>Minimum T-count for Clifford+T synthesis of diagonal third-level gates is governed by the Amy&ndash;Mosca Reed&ndash;Muller decoding formulation. Reformulating &delta;(U) through cubic and quadratic moment tensors, we prove &delta;(U) &ge; 2(n &minus; d) for pure-cubic gates with radical dimension d&mdash;nearly doubling stabilizer nullity&mdash;and &delta;(U) &ge; 2(n &minus; d) + 1 when d = 0. For general level-three gates we obtain &delta;(U) &ge; 2(n &minus; d<sup>*</sup> &minus; r) from the quadratic moment rank r; we show unitary stabilizer nullity satisfies &nu; = n &minus; d. Residue weight at most seven pins the T-count exactly and independently of n; we characterize non-additivity and prove &delta;(&oplus;<sub>m</sub> CCZ<sub>i</sub>) = 6m + 1 for parallel Toffoli layers with matching upper bounds.</p>
+                <div class="links">
+                    <a href="media/documents/cnotT.pdf">draft</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">How Much Workspace Does Optimal-T Synthesis Need? Ancilla Complexity in the Mixed Clifford+T Model (2026)</div>
+            <div class="work-body">
+                <p class="work-meta">In progress &middot; with J. Lee &middot; Carnegie Mellon University &amp; Seoul National University</p>
+                <p>In the mixed Clifford+T model, Gosset, Kothari, and Zhang showed that the n-qubit Toffoli gate admits an &epsilon;-approximation with &Theta;(log(1/&epsilon;)) T gates, but their construction requires ancillae linear in that count. We characterize the workspace needed to preserve this optimal T-scaling. For Toffoli, one ancilla suffices at the optimal T-count for every &epsilon;; for general Boolean oracle unitaries, a depth-first running tally yields a genuine ancilla/T tradeoff&mdash;(O(log k), O(k)) versus (O(1), poly(n, k))&mdash;where k scales with the squared Fourier &ell;<sub>1</sub> norm and log(1/&epsilon;). We prove the tally optimal among single-pass evaluators and show that, in Tan&rsquo;s unitary synthesis framework, the gadget reduces ancillae to O(log(n + log(1/&epsilon;))) for bounded Fourier &ell;<sub>1</sub> norm, exponentially less than prior constructions.</p>
+                <div class="links">
+                    <a href="media/documents/efficient_toff.pdf">draft</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-heading">Publications</h2>
+    <div class="work-list">
+        <div class="work-item">
+            <div class="work-title">Resource-efficient quantum matrix processing with commutator scaling (2026)</div>
+            <div class="work-body">
+                <p class="work-meta">Accepted to <em>TQC</em> 2026 (poster) &middot; with J. Watson, S. Wang &middot; Caltech IQIM SURF</p>
+                <p>We develop quantum algorithms for estimating properties of general matrix functions, with applications to phase estimation, Green&rsquo;s function evaluation, and recovering measurement distributions of time-evolved states. The resulting methods exhibit commutator scaling in matrix parameters similar to that usually found for product formulae, lower circuit depth in all other parameters, and require only a single ancillary qubit. Our central primitive consists of classically postprocessing randomly chosen product formulae circuits, which mathematically corresponds to an approximation of a Richardson extrapolation. Within our framework, we introduce a protocol for approximating the measurement distributions of quantum states, extending beyond standard observable estimation. We also provide tightened gate complexity bounds for practically relevant systems, including those with k-local interactions, long-tailed matrix ensembles, and conserved quantities. Finally, numerical experiments confirm that our method can achieve significantly shallower circuit depths than standard product formulae in certain parameter regimes, and highlight the potential of their heuristic application.</p>
+                <div class="links">
+                    <a href="media/documents/Low_Depth_Eigenvalue_Estimation.pdf">paper</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Benchmarking Zero-Setup Quantum Circuit Simulators (2026)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>arXiv</em> preprint, 2026 &middot; with M. Z. Mullath, H. Tepanyan &middot; BlueQubit &amp; Carnegie Mellon University</p>
+                <p>Practitioners increasingly rely on hosted simulation environments, but their performance characteristics remain poorly documented. We present a systematic benchmarking study of GPU-accelerated approximate quantum simulation across two widely used methods: matrix product states (MPS) and Pauli path simulation (PPS), comparing BlueQubit (a hosted tool that handles hardware provisioning, simulator configuration, and job orchestration) against AWS Braket, Quantum Rings, PPS-Qiskit, and PauliPropagation.jl. For MPS, we find that GPU runtime yields sub-quadratic scaling with bond dimension, with a growing advantage over CPU at increasing scale. For Pauli path simulation on IBM&rsquo;s 127-qubit kicked Ising benchmark, GPUs deliver up to 1,400&times; speedup at fine truncation thresholds (&delta; = 2.5 &times; 10<sup>&minus;5</sup>, 27.6M Pauli terms), and are the only backends that reach accuracy regimes below &delta; = 10<sup>&minus;5</sup>, which remained inaccessible to the commodity CPU-based implementations and self-contained SDKs evaluated here. We also provide a reproducible characterization of these simulators across regimes, including tradeoffs that isolated evaluations do not show. To support transparency and reuse, we provide a public GitHub repository containing all benchmarking code and configurations.</p>
+                <div class="links">
+                    <a href="media/documents/bqsimbench.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/mps-pps-zero-setup-benchmarks">code</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">An End-to-End Hybrid Quantum&ndash;Classical Sampling Workflow for Discrete Markov Random Fields: A Reproducible Case Study (2026)</div>
+            <div class="work-body">
+                <p class="work-meta">Accepted to <em>IEEE International Conference on Quantum Computing and Engineering (QCE)</em> 2026 &middot; Quantum End-to-End Hybrid Case Studies (QECS) Technical Papers track &middot; Carnegie Mellon University</p>
+                <p>Sampling from discrete Markov random fields (MRFs) is a well-known hard problem in probabilistic inference. We study amplitude-encoded i.i.d. sampling for small discrete MRFs, scoped to the regime where the 2<sup>n</sup> target probabilities can be precomputed classically&mdash;so no quantum exponential speedup is possible, but the structural property that each circuit execution returns an independent sample (&tau; &approx; 1) can be cleanly compared against classical MCMC alternatives. Across 60 instances spanning five graph families (barbell, barbell-path, chain, Erd&ouml;s&ndash;R&eacute;nyi, two-clique) with 1,000-step burn-in and 3,000 retained samples, Quantum/Single-Site-Gibbs, Quantum/Block-Gibbs, Quantum/Tuned-Block-Gibbs, and Quantum/Parallel-Tempering ESS ratios have means of 16.35, 7.29, 1.82, and 1.79 respectively, showing that modern classical samplers substantially close&mdash;and may eliminate&mdash;the ESS gap relative to amplitude-encoded sampling. When the O(2<sup>n</sup>) classical preprocessing required by the amplitude encoder is amortized into wall-clock time, exact inverse-CDF sampling reaches a mean of 17,683,598 ESS/s versus 487,706 ESS/s for the quantum sampler (36&times; on mean rates, 153&times; mean per-instance), confirming no wall-clock advantage in this regime. The contribution is therefore not a speedup claim but (i) a clean characterization of MCMC autocorrelation costs under a fixed protocol and (ii) a reproducible benchmark of amplitude-encoded state preparation for discrete MRFs at n = 8, 10, 12. We further report a multi-trial matrix product state (MPS) scaling study (three seeds per point, n up to 40) showing &chi; = 32 achieves F = 0.721 &plusmn; 0.059 at n = 40, and a matched-budget variational quantum circuit (VQC) vs. MPS comparison at n = 8, 10, 12 where VQC fidelities fall below MPS at every point ((F<sub>VQC</sub>, F<sub>MPS</sub>) = (0.306, 0.990), (0.210, 0.958), (0.165, 0.878) at compressions 10.7&times;, 34.1&times;, 113.8&times;)&mdash;a negative result for shallow hardware-efficient ans&auml;tze.</p>
+                <div class="links">
+                    <a href="media/documents/qdgmbench.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/QuantumDGM">code</a>&nbsp;&nbsp;<a href="media/documents/10_417_Final_Report.pdf">course report</a>
+                </div>
+                <p class="work-note">Extends the CMU 10-417 QuantumDGM project. Done in collaboration with Bryan Zhang.</p>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Depth-Efficient Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress (2026)</div>
+            <div class="work-body">
+                <p class="work-meta">Accepted to <em>IEEE International Conference on Quantum Computing and Engineering (QCE)</em> 2026 &middot; Quantum Applications (QAPP) Technical Papers track &middot; with S. R. Mazumder &middot; Carnegie Mellon University</p>
+                <p>We present, to our knowledge, the first adaptation of Pauli Correlation Encoding (PCE) to quantum topological data analysis, reformulating Betti number estimation as a depth-efficient variational optimization over a compressed qubit register. From a Takens embedding and Vietoris&ndash;Rips filtration of S&amp;P 500 returns, we extract combinatorial Laplacians and recast null-space counting as a continuous-PCE Rayleigh-quotient minimization with variational deflation, encoding n<sup>k</sup> simplex indices into O(n<sup>1/&kappa;</sup><sub>k</sub>) qubits with shallow, ancilla-free circuits. Because the resulting loss is rational rather than bilinear in the correlators, the barren-plateau bound of [1] does not transfer; empirically the gradient variance decays only polynomially, with no exponential barren plateau, over n = 4&ndash;12 qubits. The classical stage matches ripser [2] on all 190 sliding windows (2007&ndash;2009). On the real market Laplacians (&beta;<sub>1</sub> = 1&ndash;22), warm-starting from a classical null-space surrogate allows PCE-VQE to recover &beta;<sub>1</sub> exactly at every scale, placing the obstacle in the optimisation landscape rather than the encoding. Chronologically split classification gives in-regime ROC AUC 0.818, but out-of-distribution evaluation on the 2020 COVID shock and 2022 rate cycle (AUC 0.009, 0.515) shows the calibration does not generalize across crisis regimes.</p>
+                <div class="links">
+                    <a href="media/documents/qtda.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Quantum-Market-Crash-TDA">code</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers (2025)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>Tutorials in Operations Research</em>, INFORMS 2025 &middot; with S. Tayur</p>
+                <p>Several articles and books adequately cover quantum computing concepts, such as gate/circuit model (and Quantum Approximate Optimization Algorithm, QAOA), Adiabatic Quantum Computing (AQC), and Quantum Annealing (QA). However, they typically stop short of accessing quantum hardware and solve numerical problem instances. This tutorial offers a quick hands-on introduction to solving Quadratic Unconstrained Binary Optimization (QUBO) problems on currently available quantum computers. We cover both IBM and D-Wave machines: IBM utilizes a gate/circuit architecture, and D-Wave is a quantum annealer. We provide examples of three canonical problems (Number Partitioning, Max-Cut, Minimum Vertex Cover), and two models from practical applications (from cancer genomics and a hedge fund portfolio manager, respectively). An associated GitHub repository provides the codes in five companion notebooks. Catering to undergraduate and graduate students in computationally intensive disciplines, this article also aims to reach working industry professionals seeking to explore the potential of near-term quantum applications.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/pdf/2401.08989">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>&nbsp;&nbsp;<a href="media/slides/QUBOonQCslides.pdf">slides</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Quantum Annealing Approaches to Solving the Shipment Rerouting Problems (2025)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>arXiv</em> preprint arXiv:2501.05624, 2025 &middot; with F. Li, M. Zhao</p>
+                <p>In this paper, we study a shipment rerouting problem (SRP) which generalizes many NP-hard sequencing and packing problems. A SRP's solution has ample practical applications in vehicle scheduling and transportation logistics. Given a network of hubs, a set of goods must be delivered by trucks from their source-hubs to their respective destination-hubs. The objective is to select a set of trucks and to schedule these trucks' routes so that the total cost is minimized. The problem SRP is NP-hard; only classical approximation algorithms have been known for some of its NP-hard variants. In this work, we design classical algorithms and quantum annealing algorithms for this problem with various capacitated trucks. The algorithms that we design use novel mathematical programming formulations and new insights into solving sequencing and packing problems simultaneously. Such formulations take advantage of network infrastructure, shipments, and truck capacities. We conduct extensive experiments showing that in various scenarios, the quantum annealing solver generates near-optimal or optimal solutions much faster than the classical algorithm solver.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/pdf/2501.05624">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers">code</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Improved Classical and Quantum Algorithms for the Shipment Rerouting Problems (2024)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>Journal of Student-Scientists&rsquo; Research</em>, 2024 &middot; with M. Zhao, F. Li</p>
+                <p>In this paper, we study a shipment rerouting problem, which generalizes many NP-hard routing problems and packing problems. This problem has ample and practical applications in vehicle scheduling and transportation logistics. Given a network of hubs, a set of shipments needs must be delivered from their sources to their respective destinations by trucks. The objective is to select a set of transportation means and schedule travel routes so that the total cost is minimized. This problem is NP-hard and only classical approximation algorithms were known to have been studied for some of its NP-hard variants. In [21], a quantum algorithm, based on the Ising model, generates an exact solution for a variant of this problem. In this work, we design classical exact and approximation algorithms as well as a quantum algorithm for this problem. The algorithms that we design use novel mathematical programming formulations and/or new insights on solving packing and routing problems simultaneously. Such algorithms take advantage of the network infrastructure, the shipments, and transportation means. We give provable running time bounds. We conduct extensive experiments and show that our classical solutions are empirically better than the up-to-date quantum algorithms in the noisy intermediate-scale quantum (NISQ) era.</p>
+                <div class="links">
+                    <a href="media/documents/hybrid_quantum_ship_routing.pdf">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/ClassicalQuantumShipRouting.git">code</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Benchmarking Metaheuristic-Integrated QAOA Against Quantum Annealing (2024)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>Lecture Notes in Networks and Systems</em>, 2024 &middot; with A. Sen, U. Sen</p>
+                <p>The Quantum Approximate Optimization Algorithm (QAOA) is one of the most promising Noisy Intermediate Quantum (NISQ) Algorithms in solving combinatorial optimizations and displays potential over classical heuristic techniques. Unfortunately, QAOA's performance depends on the choice of parameters and standard optimizers often fail to identify key parameters due to the complexity and mystery of these optimization functions. In this paper, we benchmark QAOA circuits modified with metaheuristic optimizers against classical and quantum heuristics to identify QAOA parameters. The experimental results reveal insights into the strengths and limitations of both Quantum Annealing and metaheuristic-integrated QAOA across different problem domains. The findings suggest that the hybrid approach can leverage classical optimization strategies to enhance the solution quality and convergence speed of QAOA, particularly for problems with rugged landscapes and limited quantum resources. Furthermore, the study provides guidelines for selecting the most appropriate approach based on the specific characteristics of the optimization problem at hand.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/pdf/2309.16796v3">paper</a>&nbsp;&nbsp;<a href="media/slides/Benchmarking Metaheuristic-Integrated QAOA against Quantum Annealing.pdf">slides</a>&nbsp;&nbsp;<a href="media/videos/Benchmarking Metaheuristic Integrated QOA against Quantum Annealing.mp4">video</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Differential Evolution Algorithm based Hyper-Parameters Selection of Transformer Neural Network Model for Load Forecasting (2023)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>IEEE SSCI</em>, 2023 &middot; with A. Sen, U. Sen</p>
+                <p>Accurate load forecasting plays a vital role in numerous sectors, but accurately capturing the complex dynamics of dynamic power systems remains a challenge for traditional statistical models. For these reasons, time-series models (ARIMA) and deep-learning models (ANN, LSTM, GRU, etc.) are commonly deployed and often experience higher success. In this paper, we analyze the efficacy of the recently developed Transformer-based Neural Network model in load forecasting. Transformer models have the potential to improve load forecasting because of their ability to learn long-range dependencies derived from their Attention Mechanism. We apply several metaheuristics namely Differential Evolution to find the optimal hyperparameters of the Transformer-based Neural Network to produce accurate forecasts. Differential Evolution provides scalable, robust, global solutions to non-differentiable, multi-objective, or constrained optimization problems. Our work compares the proposed Transformer-based Neural Network model integrated with different metaheuristic algorithms by their performance in load forecasting based on numerical metrics such as Mean Squared Error (MSE) and Mean Absolute Percentage Error (MAPE). Our findings demonstrate the potential of metaheuristic-enhanced Transformer-based Neural Network models in load forecasting accuracy and provide optimal hyperparameters for each model.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/pdf/2307.15299">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/Meta-Transformer">code</a>&nbsp;&nbsp;<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O8QA5H">dataset</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting (2023)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>ECTA</em>, 2023 &middot; with A. Sen, D. Dutta, U. Sen, P. Syam, S. Dhar</p>
+                <p>Weather forecasting plays a vital role in numerous sectors, but accurately capturing the complex dynamics of weather systems remains a challenge for traditional statistical models. Apart from Auto Regressive time forecasting models like ARIMA, deep learning techniques (Vanilla ANNs, LSTM and GRU networks), have shown promise in improving forecasting accuracy by capturing temporal dependencies. This paper explores the application of metaheuristic algorithms, namely Genetic Algorithm (GA), Differential Evolution (DE), and Particle Swarm Optimization (PSO), to automate the search for optimal hyperparameters in these model architectures. Metaheuristic algorithms excel in global optimization, offering robustness, versatility, and scalability in handling non-linear problems. We present a comparative analysis of different model architectures integrated with metaheuristic optimization, evaluating their performance in weather forecasting based on metrics such as Mean Squared Error (MSE) and Mean Absolute Percentage Error (MAPE). The results demonstrate the potential of metaheuristic algorithms in enhancing weather forecasting accuracy and helps in determining the optimal set of hyper-parameters for each model. The paper underscores the importance of harnessing advanced optimization techniques to select the most suitable metaheuristic algorithm for the given weather forecasting task.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/pdf/2309.02600">paper</a>&nbsp;&nbsp;<a href="https://github.com/arulrhikm/ECTA">code</a>&nbsp;&nbsp;<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PJISJU">dataset</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem (2023)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>IEEE IPDPS</em>, 2023 &middot; with F. Li</p>
+                <p>In this paper, we design, analyze, and evaluate a hybrid quantum algorithm for the metric traveling salesman problem (TSP). TSP is a well-studied NP-complete problem that many algorithmic techniques have been developed for, on both classic computers and quantum computers. The existing literature of algorithms for TSP are neither adaptive to input data nor suitable for processing medium-size data on the modern classic and quantum machines. In this work, we leverage the classic computers' power (large memory) and the quantum computers' power (quantum parallelism), based on the input data, to fasten the hybrid algorithm's overall running time. Our algorithmic ideas include trimming the input data efficiently using a classic algorithm, finding an optimal solution for the post-processed data using a quantum-only algorithm, and constructing an optimal solution for the untrimmed data input efficiently using a classic algorithm. We conduct experiments to compare our hybrid algorithm against the state-of-the-art classic and quantum algorithms on real data sets. The experimental results show that our solution truly outperforms the others and thus confirm our theoretical analysis. This work provides insightful quantitative tools for people and compilers to choose appropriate quantum or classical or hybrid algorithms, especially in the NISQ (noisy intermediate-scale quantum) era, for NP-complete problems such as TSP.</p>
+                <div class="links">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10177447">paper</a>&nbsp;&nbsp;<a href="media/slides/An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem Visual Model.pdf">slides</a>&nbsp;&nbsp;<a href="https://youtu.be/cQmbRSsT30E">video</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Comparisons of Classic and Quantum String Matching Algorithms (2022)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>ACM AISS</em>, 2022 &middot; with M. Gao, R. Huang, F. Li</p>
+                <p>In this paper, we study the string matching problem. We design a quantum string-matching algorithm for noisy intermediate-scale quantum (NISQ) computers, given the current leading quantum processing units (QPUs) having no more than a few hundred qubits. We also compare the performance of classic algorithms and quantum algorithms under various combinations. Our study provides a comprehensive and quantitative guide for users to choose appropriate classic or quantum algorithms for their string matching problems.</p>
+                <div class="links">
+                    <a href="https://dl.acm.org/doi/pdf/10.1145/3573834.3574498">paper</a>&nbsp;&nbsp;<a href="media/slides/Comparisons of Classical and Quantum String Matching Algorithms.pdf">slides</a>&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=dtuMhgOtIVg">video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer"><a href="index.html">&larr; About</a> &middot; <a href="projects.html">Projects &rarr;</a></footer>
+    <script src="site.js"></script>
+</body>
+</html>

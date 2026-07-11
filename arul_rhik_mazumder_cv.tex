@@ -1,0 +1,208 @@
+%-------------------------
+% Graduate School CV in LaTeX
+% Author: Arul Rhik Mazumder
+% Adapted for Graduate School Applications (Computer Science / Quantum Information)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\definecolor{softblue}{RGB}{70, 110, 180}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=softblue,
+    linkcolor=softblue,
+    citecolor=softblue
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\sloppy
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    {\huge \scshape Arul Rhik Mazumder} \\ \vspace{1pt}
+    39 Steele Lane, Boxborough, Massachusetts 01719 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 1-978-710-1802 ~ \href{mailto:arul.rhik@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ arul.rhik@gmail.com}
+    \href{https://arulrhikm.github.io/}{
+    \raisebox{-0.1\height}{
+        \includegraphics[height=1em]{media/images/github_PNG20.png}
+    arulrhikm.github.io}} ~
+    \href{https://www.linkedin.com/in/arul-mazumder-370294239/}{\raisebox{-0.2\height}\faLinkedin\ Arul (Rhik) Mazumder} ~
+    \href{https://scholar.google.com/citations?user=NU6USH0AAAAJ&hl=en}{%
+    \raisebox{-0.2\height}{%
+        \includegraphics[height=1em]{media/images/google-scholar.png}%
+    }%
+    Arul Mazumder}
+    \vspace{-8pt}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Imperial College London}{Sep. 2025 -- Present}
+    {MSc, Physics with Quantum Dynamics}{London, UK}
+  \resumeSubheading
+    {Carnegie Mellon University}{Aug. 2023 -- May 2026}
+    {B.S. in Computer Science; ML and Algorithms \& Complexity concentrations}{Pittsburgh, PA}
+    \resumeItemListStart
+      \resumeItem{Dean's List High Honors; GPA: 3.7 / 4.0.}
+      \resumeItem{Relevant Coursework: Quantum Computing, Complexity Theory, Learning Theory, Randomized Algorithms, Convex Optimization, Probabilistic Graphical Models, Deep Learning Systems, Parallel Computer Architecture}
+      \resumeItem{Activities: President and Founder of \href{https://cmuquantum.org/}{CMU Quantum}, Quant Club, ACM @ CMU, Project Olympus, Fencing Club.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-0.5cm}
+
+\section{Research/Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Waterloo Institute for Quantum Computing (IQC)}{May 2026 -- Aug. 2026}
+    {Undergraduate Researcher}{Waterloo, ON, Canada}
+    \resumeItemListStart
+      \resumeItem{Selected for the Undergraduate School on Experimental Quantum Information Processing (USEQIP) and an Undergraduate Research Award (URA) at IQC; two weeks of training in experimental quantum information processing followed by research on quantum algorithms with Michele Mosca and Vlad Gheorghiu. Supported by a MITACS Globalink Scholarship.}
+      \resumeItem{T-count lower bounds for Clifford+T synthesis via Amy--Mosca moments (\href{https://arulrhikm.github.io/media/documents/cnotT.pdf}{manuscript in preparation}).}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {BlueQubit}{Oct. 2025 -- Present}
+    {Part-time Scientific Communicator and Researcher}{Los Angeles, CA}
+    \resumeItemListStart
+      \resumeItem{Reviewed and synthesized BlueQubit research to produce accessible, technically accurate blog posts for the broader quantum community; attended and mentored students at quantum hackathons (e.g., YQuantum 2026).}
+      \resumeItem{Benchmarked GPU-accelerated quantum circuit simulators (MPS and Pauli path) against AWS Braket, Quantum Rings, and open-source backends; conducted runtime scaling studies across simulation backends (\href{https://arulrhikm.github.io/media/documents/bqsimbench.pdf}{preprint} on arXiv). Findings informed research-driven product decisions and improved simulator cost estimators.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Caltech Institute for Quantum Information and Matter (IQIM)}{May 2025 -- Aug. 2025}
+    {Undergraduate Researcher}{Pasadena, CA}
+    \resumeItemListStart
+      \resumeItem{Conducted research on resource-efficient quantum matrix processing using commutator scaling, achieving significant improvements in algorithmic efficiency with Samson Wang and James Watson (Google Quantum AI). \href{https://arulrhikm.github.io/media/documents/Low_Depth_Eigenvalue_Estimation.pdf}{Accepted to TQC 2026} (poster); work showcased at IQIM.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Quantum Technologies Group}{May 2023 -- Oct. 2025}
+    {Research Intern}{Pittsburgh, PA}
+    \resumeItemListStart
+      \resumeItem{Created a tutorial on quantum optimization for IBM and D-Wave machines, with a \href{https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers}{GitHub repo}; \href{https://arulrhikm.github.io/media/slides/QUBOonQCslides.pdf}{presented at INFORMS 2025} and published in \textit{Tutorials in Operations Research}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {George Mason University Algorithms Lab}{May 2022 -- Jan. 2024}
+    {Research Intern}{Fairfax, VA}
+    \resumeItemListStart
+      \resumeItem{Developed a quantum string-matching algorithm in Qiskit and compared it to classical methods; published in \textit{ACM AISS}, 2022.}
+      \resumeItem{Created a hybrid quantum-classical TSP algorithm outperforming classical approaches; published in \textit{IEEE IPDPS}, 2023.}
+      \resumeItem{Developed a quantum algorithm for the Shipment Rerouting Problem, tested on real-world networks; published in \textit{J. Student-Scientists' Research}, 2024, with an extension on \href{https://arxiv.org/pdf/2501.05624}{arXiv}.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-0.5cm}
+
+\section{Leadership \& Outreach in Quantum}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President}{Pittsburgh, PA}
+    \resumeItemListStart
+      \resumeItem{Founded and grew CMU's first student quantum organization to 200+ members with 10+ leaders; secured sponsorships from General Motors and Boeing. Developed educational materials (\href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{slides/handouts}), organized workshops with industry leaders (IBM, IonQ, Quantinuum), and led hackathon tracks and sponsored trips including the Quantum Leap Career Nexus.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Duke Software-Tailored Architectures for Quantum (STAQ)}{June 2025}{NSF-Funded Invited Scholar}{Durham, NC}
+    \resumeItemListStart
+      \resumeItem{Completed a PhD-level seminar on quantum simulation, error correction, and architecture with Peter Love, Kenneth Brown, and Yu Tong.}
+      \resumeItem{Visited the Duke Quantum Center to learn about experimental research on ion traps and neutral atoms.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-0.5cm}
+
+\section{Publications and Ongoing Work}
+\subsection*{Selected Publications and Manuscripts}
+\begin{enumerate}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=2pt]
+  \item \textbf{A. R. Mazumder}, J. Watson, S. Wang. ``\href{https://arulrhikm.github.io/media/documents/Low_Depth_Eigenvalue_Estimation.pdf}{Resource-Efficient Quantum Matrix Processing with Commutator Scaling}.'' \textit{TQC}, 2026 (poster).
+  \item \textbf{A. R. Mazumder}, M. Mosca, V. Gheorghiu. ``\href{https://arulrhikm.github.io/media/documents/cnotT.pdf}{T-Count Lower Bounds for Diagonal Third-Level Gates via Amy--Mosca Moments}.'' Manuscript in preparation, 2026.
+  \item \textbf{A. R. Mazumder}, J. Lee. ``\href{https://arulrhikm.github.io/media/documents/efficient_toff.pdf}{How Much Workspace Does Optimal-T Synthesis Need? Ancilla Complexity in the Mixed Clifford+T Model}.'' Manuscript in preparation, 2026.
+\end{enumerate}
+\vspace{-0.6cm}
+\subsection*{Peer-Reviewed and Accepted Publications}
+\small
+\begin{enumerate}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=2pt]
+  \item \textbf{A. R. Mazumder}. ``\href{https://arulrhikm.github.io/media/documents/qdgmbench.pdf}{An End-to-End Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE QCE}, 2026 (QECS track).
+  \item \textbf{A. R. Mazumder}, S. R. Mazumder. ``\href{https://arulrhikm.github.io/media/documents/qtda.pdf}{Depth-Efficient Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress}.'' \textit{IEEE QCE}, 2026 (QAPP track).
+  \item \textbf{A. R. Mazumder}, S. Tayur. ``\href{https://arxiv.org/pdf/2401.08989}{Five Starter Problems: Solving Quadratic Unconstrained Binary Optimization Models on Quantum Computers}.'' \textit{Tutorials in Operations Research}, INFORMS 2025, pp. 145--183.
+  \item M. Zhao, \textbf{A. R. Mazumder}, F. Li. ``\href{https://arulrhikm.github.io/media/documents/hybrid_quantum_ship_routing.pdf}{Improved Classical and Quantum Algorithms for Shipment Rerouting Problems}.'' \textit{J. Student-Scientists' Research}, 2024.
+  \item \textbf{A. R. Mazumder}, A. Sen, U. Sen. ``\href{https://arxiv.org/pdf/2309.16796v3}{Benchmarking Metaheuristic-Integrated QAOA Against Quantum Annealing}.'' \textit{LNNS}, 2024.
+  \item F. Li, \textbf{A. R. Mazumder}. ``\href{https://ieeexplore.ieee.org/abstract/document/10177447}{An Adaptive Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem}.'' \textit{IEEE IPDPS}, 2023.
+  \item A. Sen, \textbf{A. R. Mazumder}, U. Sen. ``\href{https://arxiv.org/pdf/2307.15299}{Differential Evolution Algorithm Based Hyperparameter Selection of Transformer Neural Networks}.'' \textit{IEEE SSCI}, 2023.
+  \item A. Sen, \textbf{A. R. Mazumder}, D. Dutta, U. Sen, P. Syam, S. Dhar. ``\href{https://arxiv.org/pdf/2309.02600}{Comparative Evaluation of Metaheuristics for Short-Term Weather Forecasting}.'' \textit{ECTA}, 2023.
+  \item M. Gao, R. Huang, \textbf{A. R. Mazumder}, F. Li. ``\href{https://dl.acm.org/doi/pdf/10.1145/3573834.3574498}{Comparisons of Classic and Quantum String Matching Algorithms}.'' \textit{ACM AISS}, 2022.
+\end{enumerate}
+\normalsize
+\vspace{-0.6cm}
+\subsection*{Preprints and Other Publications}
+\small
+\begin{enumerate}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=2pt]
+  \item \textbf{A. R. Mazumder}, M. Z. Mullath, H. Tepanyan. ``\href{https://arulrhikm.github.io/media/documents/bqsimbench.pdf}{Benchmarking Zero-Setup Quantum Circuit Simulators}.'' \textit{arXiv preprint}, 2026.
+  \item F. Li, \textbf{A. R. Mazumder}, M. Zhao. ``\href{https://arxiv.org/pdf/2501.05624}{Quantum Annealing Approaches to Shipment Rerouting Problems}.'' \textit{arXiv preprint arXiv:2501.05624}, 2025.
+\end{enumerate}
+\normalsize
+
+\section{Awards and Honors}
+\small
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{MIT IQuHacks -- 2nd Place, NVIDIA Track (2026):} Among 90+ teams; variational LABS approach with Pauli Correlation Encodings and GPU simulation, solving instances more than twice the size of prior work.}
+  \resumeItem{\textbf{Yale Quantum Institute -- 2nd Overall, YQuantum Advancement Track (2025):} Wigner-function state reconstruction via convex optimization and CNN denoising; presented at QuantumCT among 300 participants from 30+ universities.}
+  \resumeItem{\textbf{Citadel/Correlation One Datathon -- 2nd Place (2024):} Top 150 of 3,000+; pairs-trading strategy across processed food and healthcare (Sharpe 1.58), judged by Citadel QAs.}
+  \resumeItem{\textbf{HackCMU -- GSA Infrastructure Prize (2023):} Eco-Bin AI waste sorting (95\% accuracy); pilot with CMU Dining among 200+ participants.}
+  \resumeItem{\textbf{Regeneron STS Scholar (2023):} Top 300 nationally from 2,000+ applicants.}
+  \resumeItem{\textbf{Olympiads:} USA(J)MO Qualifier, USAPhO Bronze, USACO Gold, USNCO National Finalist}
+\resumeSubHeadingListEnd
+\normalsize
+
+\section{Technical Skills}
+\small
+\textbf{Programming:} Python, Julia, C++, Java, TensorFlow, PyTorch, CVXPY, PICOS \\
+\textbf{Quantum Toolkits:} Qiskit, Pennylane, BlueQubit, IBM Q Experience, D-Wave Ocean SDK, CUDA-Q \\
+\textbf{Systems:} Linux, Git, CUDA, MPI, OpenMP, pthreads
+\normalsize
+
+\end{document}
