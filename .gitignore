@@ -7,3 +7,6 @@
 /*.synctex.gz
 /arul_rhik_mazumder_cv.pdf
 /cv/build-info.json
+
+# Private application/strategy materials - never commit
+/private/
