@@ -19,18 +19,18 @@
 
 \pagestyle{empty}
 \urlstyle{same}
-\raggedbottom
+\flushbottom
 \raggedright
 \sloppy
 \setlength{\parindent}{0pt}
 
 \titleformat{\section}{\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule]
-\titlespacing*{\section}{0pt}{18pt}{7pt}
+\titlespacing*{\section}{0pt}{16pt}{7pt}
 \titleformat{\subsection}{\raggedright\normalsize\bfseries}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{3pt}{1pt}
 
 % Compact lists
-\setlist[itemize]{leftmargin=1.1em, itemsep=4pt, parsep=0pt, topsep=1pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=1.1em, itemsep=7pt plus 1.5pt, parsep=0pt, topsep=1pt, partopsep=0pt}
 \setlist[enumerate]{leftmargin=1.4em, itemsep=0.75pt, parsep=0pt, topsep=1pt, partopsep=0pt}
 
 % Entry heading: name and dates on line 1, role and place on line 2
@@ -74,10 +74,12 @@ outperform classical algorithms.
 \begin{itemize}\small
   \item Developed tighter T-count bounds for structured unitaries: polynomial-time lower bounds for diagonal
   Clifford+T gates, computed from the gate's phase polynomial and exact for layers of disjoint Toffoli-type gates
-  ($6m+1$ T gates) in the $\{\mathrm{CNOT},T\}$ model with clean ancillas. Single-author manuscript in preparation; presented at QRE 2026 and UnitaryCon 2026.
+  ($6m+1$ T gates) in the $\{\mathrm{CNOT},T\}$ model with clean ancillas. Single-author preprint; presented at QRE 2026 and UnitaryCon 2026.
   \item Paired the floor with an $O(n^3)$ upper bound that brackets every gate; the bounds carry over to Toffoli
-  networks and finite-field multiplication oracles, certifying a published $\mathrm{GF}(4)$ multiplier optimal at
-  17 T gates.
+  networks and finite-field multiplication oracles, recovering the optimal 17 T gates of the $\mathrm{GF}(4)$
+  multiplier by exact decoding.
+  \item Released \href{https://github.com/arulrhikm/isotropy-floor-code}{code and data} that rerun every computational
+  claim in the paper with one command.
   \item Completed USEQIP: quantum information coursework plus 30+ hours of hands-on experiments on IQC's quantum hardware.
 \end{itemize}
 
@@ -101,58 +103,54 @@ outperform classical algorithms.
 
 \entry{Quantum Technologies Group, Carnegie Mellon University}{May 2023 -- Jun. 2025}{Researcher with Sridhar Tayur}{Pittsburgh, PA}
 \begin{itemize}\small
-  \item Wrote a tutorial paper with five accompanying
-  \href{https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers}{notebooks} on posing and solving QUBO
-  problems with QAOA and quantum annealing (\textit{Tutorials in Operations Research}, INFORMS 2025, pp.~145--183).
-  \item Implemented and tested semidefinite-programming formulations for entanglement detection using CVXPY,
-  PICOS and Gurobi.
+  \item Wrote a tutorial paper with five
+  \href{https://github.com/arulrhikm/Solving-QUBOs-on-Quantum-Computers}{notebooks} on solving QUBO problems with
+  QAOA and quantum annealing, and tested semidefinite programs for entanglement detection.
 \end{itemize}
 
 \entry{Algorithms Group, George Mason University}{May 2022 -- Jun. 2025}{Researcher with Fei Li}{Remote}
 \begin{itemize}\small
-  \item Implemented quantum string matching in Qiskit, benchmarked against Rabin--Karp and Knuth--Morris--Pratt (ACM AISS 2022).
-  \item Built a hybrid quantum-classical algorithm for the traveling salesman problem on D-Wave QPUs that outperformed
-  the pure classical and pure quantum approaches it was benchmarked against (IEEE IPDPS 2023).
-  \item Designed three classical heuristics and a D-Wave hybrid algorithm for shipment rerouting, tested with up to
-  1,000 shipments on real transport networks (Chicago, Barcelona, Winnipeg) against classical solvers (JSSR 2024).
+  \item Benchmarked quantum string matching, a hybrid D-Wave algorithm for the traveling salesman problem, and
+  quantum annealing for shipment rerouting against classical solvers on real transport networks.
 \end{itemize}
 
 %----------PUBLICATIONS----------
 \section{Publications}
 \small
-\subsection*{Manuscripts and preprints}
+\subsection*{Quantum algorithms and complexity}
 \begin{enumerate}
+  \item \textbf{A. R. Mazumder}. ``\href{https://arulrhikm.github.io/media/documents/toffoli-layer-tcounts.pdf}{Exact T-Counts of Toffoli Layers from an Isotropy Bound}.'' Preprint, 2026;
+  \href{https://github.com/arulrhikm/isotropy-floor-code}{code and data}. Proves that a layer of $m$ disjoint Toffoli
+  gates needs exactly $6m+1$ T gates, using a polynomial-time lower bound.
   \item \textbf{A. R. Mazumder}, J. Watson, S. Wang. ``\href{https://arxiv.org/abs/2608.13862}{Resource-Efficient
-  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862; \textit{Theory of Quantum Computation,
-  Communication and Cryptography (TQC)}, 2026, poster.
-  \item \textbf{A. R. Mazumder}. ``The Cubic Moment Form.'' Manuscript in preparation, 2026. T-count lower bounds
-  for diagonal gates.
-  \item J. Lee, \textbf{A. R. Mazumder}. ``How Much Workspace Does Optimal-T Synthesis Need? Ancilla Complexity in
-  the Mixed Clifford+T Model.'' Manuscript in preparation, 2026. Ancilla bounds for optimal-T synthesis.
-  \item \textbf{A. R. Mazumder}, H. Karapetyan, M. Z. Mullath, R. H. Tanin, H. Gharibyan, H. Tepanyan.
-  ``\href{https://arxiv.org/abs/2607.09882}{Benchmarking Zero-Setup Quantum Circuit
-  Simulators}.'' arXiv:2607.09882, 2026. Runtime scaling study of GPU-accelerated circuit simulators.
-  \item F. Li, \textbf{A. R. Mazumder}, M. Zhao. ``\href{https://arxiv.org/pdf/2501.05624}{Quantum Annealing
-  Approaches to Shipment Rerouting Problems}.'' arXiv:2501.05624, 2025.
+  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862; \textit{TQC} 2026, poster. Estimates matrix functions of a Hamiltonian from plain Trotter
+  circuits with one ancilla, at a depth set by nested commutators, through randomized extrapolation.
+  \item J. Lee, \textbf{A. R. Mazumder}. ``\href{https://arulrhikm.github.io/media/documents/robust-adaptive-tcount.pdf}{Robust Adaptive T-Count Lower Bounds for Boolean Oracles}.''
+  Manuscript in preparation, 2026. Extends T-count lower bounds to adaptive circuits that may err;
+  inner product and majority still need $\Theta(n)$ T gates.
+  It also bounds the clean workspace that T-efficient synthesis of Boolean oracles requires.
 \end{enumerate}
 
-\subsection*{Peer-reviewed}
+\subsection*{Applied quantum computing and benchmarking}
 \begin{enumerate}
   \item \textbf{A. R. Mazumder}. ``\href{https://arulrhikm.github.io/media/documents/qdgmbench.pdf}{An End-to-End
-  Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE International Conference on Quantum Computing and Engineering (QCE)}, 2026.
+  Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE International Conference on Quantum Computing and Engineering
+  (QCE)}, 2026.
   \item \textbf{A. R. Mazumder}, S. R. Mazumder. ``\href{https://arulrhikm.github.io/media/documents/qtda.pdf}{Depth-Efficient
   Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress}.'' \textit{IEEE International Conference on Quantum Computing and Engineering (QCE)}, 2026.
+  \item \textbf{A. R. Mazumder} et al. ``\href{https://arxiv.org/abs/2607.09882}{Benchmarking Zero-Setup Quantum
+  Circuit Simulators}.'' arXiv:2607.09882, 2026. Runtime scaling of GPU-accelerated
+  MPS and Pauli-path simulators against cloud and open-source backends.
   \item \textbf{A. R. Mazumder}, S. Tayur. ``\href{https://arxiv.org/pdf/2401.08989}{Five Starter Problems: Solving
   Quadratic Unconstrained Binary Optimization Models on Quantum Computers}.'' \textit{Tutorials in Operations
   Research}, INFORMS, 2025, pp.~145--183.
-  \item M. Zhao, \textbf{A. R. Mazumder}, F. Li. ``\href{https://doi.org/10.13021/jssr2024.4263}{Improved Classical
-  and Quantum Algorithms for the Shipment Rerouting Problems}.'' \textit{Journal of Student-Scientists' Research}, 2024, doi:10.13021/jssr2024.4263.
-  \item \textbf{A. R. Mazumder}, A. Sen, U. Sen. ``\href{https://arxiv.org/pdf/2309.16796v3}{Benchmarking
-  Metaheuristic-Integrated QAOA Against Quantum Annealing}.'' \textit{LNNS}, 2024.
-  \item F. Li, \textbf{A. R. Mazumder}. ``\href{https://ieeexplore.ieee.org/abstract/document/10177447}{An Adaptive
-  Hybrid Quantum Algorithm for the Metric Traveling Salesman Problem}.'' \textit{IPDPS} 2023.
-  \item M. Gao, R. Huang, \textbf{A. R. Mazumder}, F. Li. ``\href{https://dl.acm.org/doi/pdf/10.1145/3573834.3574498}{Comparisons
-  of Classic and Quantum String Matching Algorithms}.'' \textit{AISS} 2022.
+  \item Earlier work benchmarking quantum optimization against classical solvers, with F. Li, A. Sen, U. Sen and
+  others, 2022--2025:
+  \href{https://ieeexplore.ieee.org/abstract/document/10177447}{\textit{IPDPS} 2023},
+  \href{https://arxiv.org/pdf/2309.16796v3}{\textit{LNNS} 2024},
+  \href{https://doi.org/10.13021/jssr2024.4263}{\textit{JSSR} 2024},
+  \href{https://dl.acm.org/doi/pdf/10.1145/3573834.3574498}{\textit{AISS} 2022}, and
+  \href{https://arxiv.org/pdf/2501.05624}{arXiv:2501.05624} on quantum annealing for shipment rerouting.
 \end{enumerate}
 \normalsize
 
@@ -161,7 +159,8 @@ outperform classical algorithms.
 \begin{itemize}\small
   \item \textbf{UnitaryCon 2026}, Toronto --- poster, ``Certified T-count floors for Toffoli networks and reversible circuits.''
   \item \textbf{Quantum Resource Estimation (QRE) 2026}, Toronto --- poster, same title.
-  \item \textbf{IEEE QCE 2026}, Toronto --- two first-author papers.
+  \item \textbf{IEEE QCE 2026}, Toronto --- talks on two first-author papers, on hybrid quantum--classical sampling for discrete
+  Markov random fields and on depth-efficient quantum topological data analysis of financial stress.
   \item \textbf{TQC 2026} --- poster, ``Resource-Efficient Quantum Eigenvalue Transform with Commutator Scaling''
   (\href{https://arulrhikm.github.io/media/documents/tqc2026-commutator-scaling-poster.pdf}{PDF}).
   \item \textbf{Quantum Leap Career Nexus}, University of Maryland, Nov. 2025, and \textbf{Caltech IQIM SURF Seminar},
@@ -199,6 +198,7 @@ outperform classical algorithms.
   secured sponsorship from General Motors and Boeing; ran workshops with IBM, IonQ and Quantinuum.
   \item Developed teaching materials (\href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{slides and handouts}),
   led hackathon tracks, and organized sponsored research trips.
+  \item Ran on-campus seminars and tutorials in quantum information science, and led student teams to national hackathons.
 \end{itemize}
 
 %----------SKILLS----------
