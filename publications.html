@@ -48,6 +48,26 @@
     <h2 class="section-heading">Publications</h2>
     <div class="work-list">
         <div class="work-item">
+            <div class="work-title">Exact T-counts of CCZ layers from an isotropy bound (2026)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>arXiv</em> preprint, 2026 &middot; single-author &middot; research term at IQC Waterloo with M. Mosca and V. Gheorghiu &middot; IQC URA 2026</p>
+                <p>The T-count is a dominant cost of fault-tolerant Clifford+T computation. We prove that a layer of m disjoint CCZ gates, the diagonal core of a parallel Toffoli layer, needs exactly 6m + 1 T gates in every Hadamard-free Clifford+T circuit with clean ancillas. Campbell and Howard gave the matching construction, and to our knowledge this is the first proof that it is optimal for general m. The proof rests on a novel isotropy bound. When a gate&rsquo;s phase polynomial has only cubic terms, the vectors recording which T gates touch each qubit span a self-orthogonal subspace over F<sub>2</sub>, and this forces the T-count to be at least twice its dimension. This argument gives a lower bound, computable by Gaussian elimination, on the T-count of every diagonal gate in the third level of the Clifford hierarchy. It is never below the stabilizer nullity &nu; and reaches 2&nu; + 1 on non-Clifford cubic gates. No bound that also holds for circuits with measurement and feedforward can do this, since such circuits implement CCZ (&nu; = 3) with four T gates, while the floor gives seven. It also recovers Campbell and Howard&rsquo;s count 4m + 3 for a fan-out of Toffolis. On the output of PyZX&rsquo;s TODD-based optimizer, relative to its Hadamard placement, it certifies 193 of 311 phase-polynomial blocks T-optimal, against 113 for nullity, including 37 of the 72 blocks too large for exhaustive search.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/2610.01024">arXiv:2610.01024</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2610.01024">pdf</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Discovering new problems for decoded quantum interferometry (2026)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>arXiv</em> preprint, 2026 &middot; with P. Niroula &middot; Magic State Labs</p>
+                <p>Decoded quantum interferometry (DQI) uses classical error correction to solve optimization problems, but it is hard to tell which problems could give it a quantum advantage. We develop soundness rules that screen candidate problems by their code parameters, decoding guarantees and classical baselines. For the standard objective of counting satisfied constraints, we prove that under worst-case Hamming decoding DQI&rsquo;s guarantee can exceed Prange completion by at most (&radic;2 &minus; 1)/2. Optimal polynomial intersection (OPI) attains this margin cap asymptotically, so no candidate in this setting can exceed OPI&rsquo;s margin. We also derive a performance law for real-valued objectives: the objective fixes both the solution quality and which errors the decoder must correct. An AI-agent search guided by these rules found two candidate applications. Alternant max-agreement on McEliece-type public keys tests what a secret decoder is worth to DQI against classical solvers that see only the public instance. Multiplicative polynomial intersection, a knapsack-type problem built from discrete logarithms, pairs a cosine objective with a public decoder for signed errors. For both we prove decoding guarantees and finite-length comparisons with Prange restarts, and on the larger instances we tested, DQI&rsquo;s expected quality exceeds what our classical solvers reach within fixed budgets.</p>
+                <div class="links">
+                    <a href="https://arxiv.org/abs/2610.06753">arXiv:2610.06753</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2610.06753">pdf</a>
+                </div>
+            </div>
+        </div>
+        <div class="work-item">
             <div class="work-title">Resource-efficient quantum eigenvalue transform with commutator scaling (2026)</div>
             <div class="work-body">
                 <p class="work-meta">Accepted to <em>TQC</em> 2026 (poster) &middot; with J. Watson, S. Wang &middot; Caltech IQIM SURF</p>
