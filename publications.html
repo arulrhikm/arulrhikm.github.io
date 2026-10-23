@@ -30,21 +30,17 @@
     <h2 class="section-heading">Ongoing Work</h2>
     <div class="work-list">
         <div class="work-item">
-            <div class="work-title">Exact T-counts of Toffoli layers from an isotropy bound (2026)</div>
+            <div class="work-title">The cubic moment form (2026)</div>
             <div class="work-body">
-                <p class="work-meta">Preprint &middot; single-author &middot; written during a research term at IQC Waterloo with M. Mosca and V. Gheorghiu &middot; IQC URA 2026</p>
-                <p>The T-count is the dominant cost of fault-tolerant Clifford+T computation. We prove that a layer of m disjoint CCZ gates, the diagonal core of a parallel Toffoli layer, needs exactly 6m + 1 T gates in every Hadamard-free Clifford+T circuit with clean ancillas, matching the construction of Campbell and Howard. The proof rests on an isotropy constraint: for a pure-cubic phase, the vectors recording which T gates touch each qubit span a totally isotropic subspace. In general this gives the isotropy floor &delta; &ge; 2(n &minus; d<sup>*</sup>) &minus; r for every diagonal level-three gate, computed from the phase polynomial in polynomial time. The floor is never below stabilizer nullity &nu; = n &minus; d<sup>*</sup>, a parity argument raises it to 2&nu; + 1 on non-Clifford pure-cubic gates, and it recovers Campbell and Howard&rsquo;s 4m + 3 for a fan-out of m Toffolis. On the output of PyZX&rsquo;s TODD-based optimizer, the floor certifies 193 of 311 merged phase-polynomial blocks optimal, against 113 for nullity.</p>
-                <div class="links">
-                    <a href="media/documents/toffoli-layer-tcounts.pdf">draft</a>
-                    <a href="https://github.com/arulrhikm/isotropy-floor-code">code and data</a>
-                </div>
+                <p class="work-meta">Manuscript in preparation &middot; single-author &middot; begun during a research term at IQC Waterloo with M. Mosca and V. Gheorghiu &middot; IQC URA 2026</p>
+                <p>T-count lower bounds for diagonal Clifford+T gates.</p>
             </div>
         </div>
         <div class="work-item">
-            <div class="work-title">Robust adaptive T-count lower bounds for Boolean oracles (2026)</div>
+            <div class="work-title">How much workspace does optimal-T synthesis need? Ancilla complexity in the mixed Clifford+T model (2026)</div>
             <div class="work-body">
-                <p class="work-meta">In progress &middot; J. Lee and A. R. Mazumder</p>
-                <p>Gosset, Kothari and Zhang showed that randomized Clifford+T synthesis can sharply reduce the T-count of a Boolean oracle U<sub>f</sub>, exponentially so for the multi-controlled Toffoli gate. Their lower bound for adaptive circuits holds only at zero error, and they left its extension to positive error as a challenge. We prove that for every non-affine f, an adaptive implementation within diamond error &epsilon; has worst-input expected T-count at least (1 &minus; 2&epsilon;/&delta;<sub>f</sub>)<sub>+</sub> &nu;(U<sub>f</sub>), where &nu; is the stabilizer nullity and &delta;<sub>f</sub> the least distance from the affine functions of f and of its non-affine derivatives. Inner product on 2n bits needs &Theta;(n) T gates at every error up to 1/16, and by counting Pauli operators with large expectation in the Choi state, majority needs &Theta;(n) at every error below an absolute constant. On the construction side, a sampled circuit that thresholds k parities runs with O(log k) clean ancillae instead of &Theta;(k), and the multi-controlled Toffoli needs only one clean ancilla.</p>
+                <p class="work-meta">Manuscript in preparation &middot; J. Lee and A. R. Mazumder</p>
+                <p>Ancilla bounds for optimal-T synthesis.</p>
             </div>
         </div>
     </div>
