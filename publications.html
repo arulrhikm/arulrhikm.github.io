@@ -27,24 +27,23 @@
     <h1 class="page-title">Publications</h1>
     <p class="page-subtitle">Click a title to expand the abstract. Hackathons and outreach are on the <a href="projects.html">Projects</a> page.</p>
 
-    <h2 class="section-heading">Ongoing Work</h2>
-    <div class="work-list">
-        <div class="work-item">
-            <div class="work-title">How much workspace does optimal-T synthesis need? Ancilla complexity in the mixed Clifford+T model (2026)</div>
-            <div class="work-body">
-                <p class="work-meta">Manuscript in preparation &middot; J. Lee and A. R. Mazumder</p>
-                <p>Ancilla bounds for optimal-T synthesis.</p>
-            </div>
-        </div>
-    </div>
-
     <h2 class="section-heading">Publications</h2>
     <div class="work-list">
+        <div class="work-item">
+            <div class="work-title">Ancilla-free randomized Toffoli gates and the T-count of Boolean oracles (2026)</div>
+            <div class="work-body">
+                <p class="work-meta"><em>arXiv</em> preprint, submitted October 2026 &middot; single-author</p>
+                <p>In fault-tolerant Clifford+T circuits, a Boolean oracle costs T gates and extra qubits, and on four or more qubits every exact Toffoli gate needs an extra qubit. Gosset, Kothari and Zhang showed that sampling a fresh random circuit for each call makes the T-count of the Toffoli gate independent of its size, but a direct implementation of their sampler uses about one extra qubit per bit of precision. We show that computing the sampled parities in place, on the gate&rsquo;s own controls, removes every extra qubit once the gate is large enough: each random circuit then uses about 8 T gates per bit of precision and borrows only the gate&rsquo;s own idle inputs. This is one T gate more per circuit than the best measurement-free variant that keeps one clean ancilla. The same holds for exclusive-ors of indicators of affine subspaces, such as equality tests and checks of linear equations. For randomized circuits that do not measure, this is within a factor of eight of optimal up to an additive constant, even with extra qubits, and when each random circuit computes a Boolean function exactly, closing the factor asymptotically is equivalent to determining the leading constant in the T-count of exact multi-controlled Toffoli gates. Finally, the oracle of the indicator of a random set of fixed density needs exponentially many T gates at constant error, while that of an affine subspace of the same density needs a constant number, and extra qubits reduce the exponential cost only quadratically.</p>
+                <div class="links">
+                    <a href="https://github.com/arulrhikm/randomized-oracle-checks">verification code</a>
+                </div>
+            </div>
+        </div>
         <div class="work-item">
             <div class="work-title">Exact T-counts of CCZ layers from an isotropy bound (2026)</div>
             <div class="work-body">
                 <p class="work-meta"><em>arXiv</em> preprint, 2026 &middot; single-author &middot; research term at IQC Waterloo with M. Mosca and V. Gheorghiu &middot; IQC URA 2026</p>
-                <p>The T-count is a dominant cost of fault-tolerant Clifford+T computation. We prove that a layer of m disjoint CCZ gates, the diagonal core of a parallel Toffoli layer, needs exactly 6m + 1 T gates in every Hadamard-free Clifford+T circuit with clean ancillas. Campbell and Howard gave the matching construction, and to our knowledge this is the first proof that it is optimal for general m. The proof rests on a novel isotropy bound. When a gate&rsquo;s phase polynomial has only cubic terms, the vectors recording which T gates touch each qubit span a self-orthogonal subspace over F<sub>2</sub>, and this forces the T-count to be at least twice its dimension. This argument gives a lower bound, computable by Gaussian elimination, on the T-count of every diagonal gate in the third level of the Clifford hierarchy. It is never below the stabilizer nullity &nu; and reaches 2&nu; + 1 on non-Clifford cubic gates. No bound that also holds for circuits with measurement and feedforward can do this, since such circuits implement CCZ (&nu; = 3) with four T gates, while the floor gives seven. It also recovers Campbell and Howard&rsquo;s count 4m + 3 for a fan-out of Toffolis. On the output of PyZX&rsquo;s TODD-based optimizer, relative to its Hadamard placement, it certifies 193 of 311 phase-polynomial blocks T-optimal, against 113 for nullity, including 37 of the 72 blocks too large for exhaustive search.</p>
+                <p>The T-count is a dominant cost of fault-tolerant Clifford+T computation. We prove that every Hadamard-free Clifford+T circuit with clean ancillas for a layer of m disjoint CCZ gates, the diagonal core of a parallel Toffoli layer, uses at least 6m + 1 T gates. Campbell and Howard gave a circuit with 6m + 1, and to our knowledge this is the first proof that it is optimal for general m. The proof combines Campbell and Howard&rsquo;s self-orthogonality of the qubit-touch vectors with a rank (flattening) bound, sharpened by one. More generally, the argument gives a lower bound on the T-count of every diagonal gate in the third level of the Clifford hierarchy, the isotropy floor, computable by Gaussian elimination. It is never below the stabilizer nullity &nu; and reaches 2&nu; + 1 on non-Clifford gates whose phase is purely cubic. No bound that also holds for circuits with measurement and feedforward can do this, since such circuits implement CCZ (&nu; = 3) with four T gates and the layer with 4m, where the floor gives seven and 6m + 1. The floor also recovers Campbell and Howard&rsquo;s count 4m + 3 for a fan-out of Toffolis. On the output of PyZX&rsquo;s TODD-based optimizer, relative to its Hadamard placement, it certifies 193 of 311 phase-polynomial blocks T-optimal once repeated parities are merged (at the best of five optimizer seeds), against 113 for nullity, including 37 of the 72 blocks too large for exhaustive search.</p>
                 <div class="links">
                     <a href="https://arxiv.org/abs/2610.01024">arXiv:2610.01024</a>&nbsp;&nbsp;<a href="https://arxiv.org/pdf/2610.01024">pdf</a>
                 </div>
