@@ -53,14 +53,18 @@
 \vspace{-8pt}
 
 \small
-\textbf{Research interests.} What quantum algorithms really cost: lower bounds on the T gates and ancilla qubits
-any circuit must use, cheaper fault-tolerant algorithms such as Hamiltonian simulation, and when quantum methods
-genuinely beat classical ones.
+\textbf{Research interests.} What useful quantum computation really costs: proving how many expensive operations
+(T gates) and extra qubits a circuit needs, designing cheaper algorithms for error-corrected quantum computers, and
+finding where quantum algorithms genuinely beat classical ones.
 \normalsize
 
 %----------EDUCATION----------
 \section{Education}
 \entry{Imperial College London}{Sep. 2026 -- Sep. 2027 (expected)}{MSc, Physics with Quantum Dynamics}{London, UK}
+\begin{itemize}\small
+  \item Single-author preprint (submitted): randomized Toffoli gates that need no extra qubits once the gate
+  is large enough, with a T-count within a factor of eight of the fewest possible among measurement-free randomized circuits.
+\end{itemize}
 \entry{Carnegie Mellon University}{Aug. 2023 -- May 2026}{B.S. in Computer Science; ML and Algorithms \& Complexity concentrations; University Honors}{Pittsburgh, PA}
 \begin{itemize}\small
   \item Coursework: Quantum Computing, Complexity Theory, Learning Theory, Randomized Algorithms, Convex
@@ -71,31 +75,32 @@ genuinely beat classical ones.
 \section{Research Experience}
 \entry{Institute for Quantum Computing (IQC), University of Waterloo}{May 2026 -- Aug. 2026}{Undergraduate Researcher (Mitacs Globalink Scholar), hosted by Michele Mosca and Vlad Gheorghiu}{Waterloo, ON, Canada}
 \begin{itemize}\small
-  \item Proved that Campbell and Howard's $6m+1$ construction for a layer of $m$ disjoint CCZ (Toffoli) gates is
-  T-optimal among Hadamard-free circuits, via a lower bound computable in $O(n^3)$ time for every diagonal
-  Clifford+T gate. Single-author, \href{https://arxiv.org/abs/2610.01024}{arXiv:2610.01024}; posters at QRE and UnitaryCon 2026.
-  \item The bound certifies 193 of 311 phase blocks in PyZX/TODD optimizer output as T-optimal, against 113 for
-  stabilizer nullity, and recovers the known optimum of 17 T gates for the $\mathrm{GF}(4)$ multiplier.
-  \item Completed IQC's USEQIP program: quantum information coursework and 30+ hours of experiments on quantum hardware.
+  \item \textbf{Single-author result} (\href{https://arxiv.org/abs/2610.01024}{arXiv:2610.01024}): proved that no circuit
+  without internal Hadamard gates can implement a layer of $m$ non-overlapping Toffoli-type (CCZ) gates with fewer
+  T gates than Campbell and Howard's $6m+1$ construction, using a lower bound, computable in polynomial time, for a
+  broad class of gates (diagonal Clifford+T).
+  \item On the output of two public circuit optimizers (PyZX, TODD), the bound proves 193 of 311 circuit pieces
+  already optimal, against 113 for stabilizer nullity, the standard prior bound.
 \end{itemize}
 
 \entry{Magic State Labs}{Aug. 2026 -- Oct. 2026}{Research Consultant, with Pradeep Niroula}{Remote}
 \begin{itemize}\small
-  \item Built soundness rules for screening candidate problems for decoded quantum interferometry (DQI) and ran an
-  AI-agent search under them that found two new candidate applications (\href{https://arxiv.org/abs/2610.06753}{arXiv:2610.06753}).
+  \item Wrote criteria for checking whether a problem is a sound target for decoded quantum interferometry (DQI), a
+  recent quantum optimization algorithm, and used them to steer an AI-agent search that found two new candidate
+  applications (\href{https://arxiv.org/abs/2610.06753}{arXiv:2610.06753}).
 \end{itemize}
 
 \entry{Caltech Institute for Quantum Information and Matter (IQIM)}{May 2025 -- Aug. 2025}{SURF Undergraduate Researcher, Preskill group, with Samson Wang and James Watson (Google Quantum AI)}{Pasadena, CA}
 \begin{itemize}\small
-  \item Developed early fault-tolerant algorithms for matrix functions that use commutator scaling to cut the cost
-  of product-formula routines (\href{https://arxiv.org/abs/2608.13862}{arXiv:2608.13862}; TQC 2026 poster).
+  \item First-author paper (\href{https://arxiv.org/abs/2608.13862}{arXiv:2608.13862}): quantum algorithms for computing
+  functions of matrices on early error-corrected hardware, with costs that shrink when the terms of the simulated
+  system nearly commute.
 \end{itemize}
 
-\entry{BlueQubit}{Oct. 2025 -- Present}{Part-time Researcher and Hackathon Lead, AI and Core teams}{Los Angeles, CA (remote)}
+\entry{BlueQubit}{Oct. 2025 -- Present}{Part-time Researcher, AI and Core teams}{Los Angeles, CA (remote)}
 \begin{itemize}\small
-  \item Benchmarked GPU-accelerated MPS and Pauli-path simulators against AWS Braket, Quantum Rings and open-source
-  backends; the runtime study (\href{https://arxiv.org/abs/2607.09882}{arXiv:2607.09882}) informed product decisions and simulator cost estimators.
-  \item Write technical blog posts and tutorials, and mentor and judge the BlueQubit track at student quantum hackathons.
+  \item First-author benchmark of GPU-accelerated quantum simulators against commercial and open-source platforms
+  (\href{https://arxiv.org/abs/2607.09882}{arXiv:2607.09882}); the results informed product decisions and cost estimators.
 \end{itemize}
 
 \entry{Quantum Technologies Group, Carnegie Mellon University}{May 2023 -- Jun. 2025}{Researcher with Sridhar Tayur}{Pittsburgh, PA}
@@ -124,14 +129,14 @@ genuinely beat classical ones.
   \item \textbf{A. R. Mazumder}, P. Niroula. ``\href{https://arxiv.org/abs/2610.06753}{Discovering New Problems for Decoded
   Quantum Interferometry}.'' arXiv:2610.06753, 2026.
   \item \textbf{A. R. Mazumder}, J. Watson, S. Wang. ``\href{https://arxiv.org/abs/2608.13862}{Resource-Efficient
-  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862, 2026; TQC 2026 poster.
+  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862, 2026.
   \item \textbf{A. R. Mazumder}, H. Karapeytan, M. Z. Mullath, R. Tanin, H. Gharibyan, H. Tepanyan.
   ``\href{https://arxiv.org/abs/2607.09882}{Benchmarking Zero-Setup Quantum Circuit Simulators}.'' arXiv:2607.09882, 2026.
   \item F. Li, \textbf{A. R. Mazumder}, M. Zhao. ``\href{https://arxiv.org/pdf/2501.05624}{Quantum Annealing Approaches
   to Shipment Rerouting Problems}.'' arXiv:2501.05624, 2025.
 \end{enumerate}
 
-\subsection*{Peer-reviewed}
+\subsection*{Conference and journal papers}
 \begin{enumerate}
   \item \textbf{A. R. Mazumder}, E. Towe. ``\href{https://arxiv.org/abs/2607.09893}{An End-to-End
   Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE QCE}, 2026.
@@ -151,11 +156,39 @@ genuinely beat classical ones.
 \end{enumerate}
 \normalsize
 
+%----------AWARDS----------
+\section{Awards and Honors}
+\begin{itemize}\small
+  \item \textbf{Mitacs Globalink Research Award} and \textbf{IQC Undergraduate Research Award} (2026);
+  \textbf{Caltech SURF Fellow} (2025); \textbf{IEEE QCE Student Travel Grant} (2026).
+  \item \textbf{Duke STAQ NSF-funded Invited Scholar} (2025): selected for a PhD-level week on quantum simulation,
+  error correction and hardware architecture.
+  \item \textbf{YQuantum} (2025, Yale): Yale Quantum Institute Grand Prize; \textbf{MIT iQuHACK} (2026): 2nd of 90+ teams, NVIDIA track.
+  \item \textbf{Citadel/Correlation One Datathon} (2024): 2nd of 150 invited from 3,000+ applicants;
+  \textbf{HackCMU} (2023): prize for an AI waste sorter piloted with CMU Dining.
+  \item \textbf{Regeneron Science Talent Search Scholar} (2023), top 300 of 2,000+ nationally. \textbf{Olympiads:}
+  USA(J)MO qualifier, USAPhO Bronze, USACO Gold, USNCO National Finalist.
+\end{itemize}
+
+%----------LEADERSHIP----------
+\section{Leadership and Outreach}
+\entry{CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President}{Pittsburgh, PA}
+\begin{itemize}\small
+  \item Founded CMU's first student quantum organization and grew it to 200+ members and 10+ student leaders;
+  secured sponsorship from General Motors and Boeing.
+  \item Wrote \href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{teaching materials};
+  ran workshops with IBM, IonQ and Quantinuum; led hackathon tracks and organized sponsored research trips.
+\end{itemize}
+\entry{BlueQubit}{Oct. 2025 -- Present}{Hackathon Lead}{Remote}
+\begin{itemize}\small
+  \item Mentor students and judge the BlueQubit track at student quantum hackathons; write technical blog posts and tutorials.
+\end{itemize}
+
 %----------TALKS----------
 \section{Talks and Posters}
 \begin{itemize}\small
   \item \textbf{QRE 2026} and \textbf{UnitaryCon 2026}, Toronto --- posters, ``Certified T-count floors for Toffoli
-  networks and reversible circuits''; \textbf{IEEE QCE 2026}, Toronto --- two first-author papers.
+  networks and reversible circuits.''
   \item \textbf{TQC 2026} --- poster, ``Resource-Efficient Quantum Eigenvalue Transform with Commutator Scaling''
   (\href{https://arulrhikm.github.io/media/documents/tqc2026-commutator-scaling-poster.pdf}{PDF}).
   \item \textbf{Caltech IQIM SURF Seminar}, Aug. 2025, and \textbf{Quantum Leap Career Nexus}, UMD, Nov. 2025 --- talks,
@@ -163,32 +196,6 @@ genuinely beat classical ones.
   (\href{https://arulrhikm.github.io/media/documents/surf2025-matrix-functions-slides.pdf}{slides}).
   \item \textbf{INFORMS Annual Meeting 2025} --- \href{https://arulrhikm.github.io/media/slides/QUBOonQCslides.pdf}{talk}
   on solving QUBO models on quantum computers.
-\end{itemize}
-
-%----------AWARDS----------
-\section{Awards and Honors}
-\begin{itemize}\small
-  \item \textbf{Mitacs Globalink Research Award} and \textbf{IQC Undergraduate Research Award} (2026);
-  \textbf{IEEE QCE Student Travel Grant} (2026).
-  \item \textbf{Duke STAQ NSF-funded Invited Scholar} (2025): PhD-level week on quantum simulation, error correction
-  and architecture (Peter Love, Kenneth Brown, Yu Tong).
-  \item \textbf{MIT iQuHACK} (2026): 2nd of 90+ teams, NVIDIA track; variational LABS with Pauli correlation encodings on GPUs.
-  \item \textbf{YQuantum} (2025, Yale): Yale Quantum Institute Grand Prize, 1st in the Alice \& Bob track, 2nd overall;
-  Wigner-function state reconstruction with convex optimization and CNN denoising.
-  \item \textbf{Citadel/Correlation One Datathon} (2024): 2nd of 150 invited from 3,000+ applicants; pairs trading, Sharpe 1.58.
-  \item \textbf{HackCMU} (2023): GSA Infrastructure Prize for Eco-Bin, an AI waste sorter piloted with CMU Dining.
-  \item \textbf{Regeneron Science Talent Search Scholar} (2023), top 300 of 2,000+ nationally. \textbf{Olympiads:}
-  USA(J)MO qualifier, USAPhO Bronze, USACO Gold, USNCO National Finalist.
-\end{itemize}
-
-%----------LEADERSHIP----------
-\section{Leadership}
-\entry{CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President}{Pittsburgh, PA}
-\begin{itemize}\small
-  \item Founded CMU's first student quantum organization (200+ members, 10+ student leaders); secured sponsorship from
-  General Motors and Boeing; ran workshops with IBM, IonQ and Quantinuum; wrote
-  \href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{teaching materials}, led
-  hackathon tracks and organized sponsored research trips.
 \end{itemize}
 
 %----------SKILLS----------
