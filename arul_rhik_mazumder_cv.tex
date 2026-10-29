@@ -25,7 +25,7 @@
 \setlength{\parindent}{0pt}
 
 \titleformat{\section}{\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{5pt}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
 \titleformat{\subsection}{\raggedright\normalsize\bfseries}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{2pt}{1pt}
 
@@ -35,7 +35,7 @@
 
 % Entry heading: name and dates on line 1, role and place on line 2
 \newcommand{\entry}[4]{%
-  \par\vspace{4pt}\noindent\textbf{#1}\hfill\textbf{\small #2}\\
+  \par\vspace{3pt}\noindent\textbf{#1}\hfill\textbf{\small #2}\\
   \textit{\small #3}\hfill\textit{\small #4}\par}
 
 \begin{document}
@@ -53,29 +53,25 @@
 \vspace{-8pt}
 
 \small
-\textbf{Research interests.} What useful quantum computation really costs: proving how many expensive operations
+\textbf{Research interests.} The cost of useful quantum computation: proving how many expensive operations
 (T gates) and extra qubits a circuit needs, designing cheaper algorithms for error-corrected quantum computers, and
-finding where quantum algorithms genuinely beat classical ones.
+finding where quantum algorithms beat classical ones.
 \normalsize
 
 %----------EDUCATION----------
 \section{Education}
 \entry{Imperial College London}{Sep. 2026 -- Sep. 2027 (expected)}{MSc, Physics with Quantum Dynamics}{London, UK}
-\begin{itemize}\small
-  \item Single-author preprint (submitted): randomized Toffoli gates that need no extra qubits once the gate
-  is large enough, with a T-count within a factor of eight of the fewest possible among measurement-free randomized circuits.
-\end{itemize}
 \entry{Carnegie Mellon University}{Aug. 2023 -- May 2026}{B.S. in Computer Science; ML and Algorithms \& Complexity concentrations; University Honors}{Pittsburgh, PA}
 \begin{itemize}\small
   \item Coursework: Quantum Computing, Complexity Theory, Learning Theory, Randomized Algorithms, Convex
-  Optimization, Parallel Computer Architecture.
+  Optimization.
 \end{itemize}
 
 %----------RESEARCH----------
 \section{Research Experience}
 \entry{Institute for Quantum Computing (IQC), University of Waterloo}{May 2026 -- Aug. 2026}{Undergraduate Researcher (Mitacs Globalink Scholar), hosted by Michele Mosca and Vlad Gheorghiu}{Waterloo, ON, Canada}
 \begin{itemize}\small
-  \item \textbf{Single-author result} (\href{https://arxiv.org/abs/2610.01024}{arXiv:2610.01024}): proved that no circuit
+  \item Proved, in a \textbf{single-author} paper (\href{https://arxiv.org/abs/2610.01024}{arXiv:2610.01024}), that no circuit
   without internal Hadamard gates can implement a layer of $m$ non-overlapping Toffoli-type (CCZ) gates with fewer
   T gates than Campbell and Howard's $6m+1$ construction, using a lower bound, computable in polynomial time, for a
   broad class of gates (diagonal Clifford+T).
@@ -83,24 +79,33 @@ finding where quantum algorithms genuinely beat classical ones.
   already optimal, against 113 for stabilizer nullity, the standard prior bound.
 \end{itemize}
 
+\entry{Independent Research}{Completed Oct. 2026}{Single-author project, carried out at CMU, IQC Waterloo and Imperial}{}
+\begin{itemize}\small
+  \item Built randomized Toffoli gates that use no extra qubits once the gate is large enough, with a T-count
+  within a factor of eight of the fewest possible among measurement-free randomized circuits (preprint submitted).
+\end{itemize}
+
 \entry{Magic State Labs}{Aug. 2026 -- Oct. 2026}{Research Consultant, with Pradeep Niroula}{Remote}
 \begin{itemize}\small
-  \item Wrote criteria for checking whether a problem is a sound target for decoded quantum interferometry (DQI), a
+  \item Wrote criteria for checking whether a problem is a good fit for decoded quantum interferometry (DQI), a
   recent quantum optimization algorithm, and used them to steer an AI-agent search that found two new candidate
   applications (\href{https://arxiv.org/abs/2610.06753}{arXiv:2610.06753}).
 \end{itemize}
 
 \entry{Caltech Institute for Quantum Information and Matter (IQIM)}{May 2025 -- Aug. 2025}{SURF Undergraduate Researcher, Preskill group, with Samson Wang and James Watson (Google Quantum AI)}{Pasadena, CA}
 \begin{itemize}\small
-  \item First-author paper (\href{https://arxiv.org/abs/2608.13862}{arXiv:2608.13862}): quantum algorithms for computing
-  functions of matrices on early error-corrected hardware, with costs that shrink when the terms of the simulated
-  system nearly commute.
+  \item Developed, as first author (\href{https://arxiv.org/abs/2608.13862}{arXiv:2608.13862}), a simulation method for early
+  error-corrected hardware that runs many shallow random circuits and combines their results classically. For a given
+  accuracy its circuits are exponentially shallower than standard Trotter simulation, at the cost of a modest increase
+  in the number of runs.
+  \item Proved that the method converges, bounded its cost, tightened the bounds for systems with weak interactions
+  or conserved quantities, and applied them to ground-state energies.
 \end{itemize}
 
 \entry{BlueQubit}{Oct. 2025 -- Present}{Part-time Researcher, AI and Core teams}{Los Angeles, CA (remote)}
 \begin{itemize}\small
-  \item First-author benchmark of GPU-accelerated quantum simulators against commercial and open-source platforms
-  (\href{https://arxiv.org/abs/2607.09882}{arXiv:2607.09882}); the results informed product decisions and cost estimators.
+  \item Benchmarked GPU-accelerated quantum simulators against commercial and open-source platforms as first author
+  (\href{https://arxiv.org/abs/2607.09882}{arXiv:2607.09882}); the results fed into BlueQubit's simulator cost estimators.
 \end{itemize}
 
 \entry{Quantum Technologies Group, Carnegie Mellon University}{May 2023 -- Jun. 2025}{Researcher with Sridhar Tayur}{Pittsburgh, PA}
@@ -172,16 +177,21 @@ finding where quantum algorithms genuinely beat classical ones.
 
 %----------LEADERSHIP----------
 \section{Leadership and Outreach}
-\entry{CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President}{Pittsburgh, PA}
+\entry{CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President (faculty advisor: Elias Towe)}{Pittsburgh, PA}
 \begin{itemize}\small
-  \item Founded CMU's first student quantum organization and grew it to 200+ members and 10+ student leaders;
-  secured sponsorship from General Motors and Boeing.
-  \item Wrote \href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{teaching materials};
-  ran workshops with IBM, IonQ and Quantinuum; led hackathon tracks and organized sponsored research trips.
+  \item Founded CMU's first student quantum club and grew it to 200+ members with a 10-person leadership team;
+  raised about \$15,000 in sponsorship from General Motors and Boeing.
+  \item Wrote the introductory \href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{teaching materials}
+  for workshops with IBM, IonQ and Quantinuum; co-designed a track for the UN Future Leaders in
+  Quantum hackathon; ran CMU's node of the Qollab Global Hackathon (12 teams); took 15 students to UMD's Quantum
+  Leap Career Nexus.
 \end{itemize}
 \entry{BlueQubit}{Oct. 2025 -- Present}{Hackathon Lead}{Remote}
 \begin{itemize}\small
-  \item Mentor students and judge the BlueQubit track at student quantum hackathons; write technical blog posts and tutorials.
+  \item Run hackathon tracks with Duke, Yale and Stanford, mostly for first- and second-year undergraduates
+  (20--30 students in person and 100--200 online per event). Built the Duke track from scratch: students test
+  four hidden 30- to 36-qubit circuits to find where classical simulation breaks down.
+  \item Helped write four tutorials and five blog posts on using GPU-accelerated simulators.
 \end{itemize}
 
 %----------TALKS----------
