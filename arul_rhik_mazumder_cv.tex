@@ -76,14 +76,14 @@ algorithms beat classical ones.
 \entry{Institute for Quantum Computing (IQC), University of Waterloo}{May 2026 -- Aug. 2026}{Undergraduate Researcher (Mitacs Globalink Scholar), hosted by Michele Mosca and Vlad Gheorghiu}{Waterloo, ON, Canada}
 \begin{itemize}\small
   \item Proved, in a \textbf{single-author} paper (\href{https://arxiv.org/abs/2610.01024}{arXiv:2610.01024}), that no circuit
-  without internal Hadamard gates can implement a layer of $m$ non-overlapping Toffoli-type (CCZ) gates with fewer
-  T gates than Campbell and Howard's $6m+1$ construction, using a lower bound, computable in polynomial time, for a
-  broad class of diagonal gates.
+  without internal Hadamard gates or measurement can implement a layer of $m$ non-overlapping Toffoli-type (CCZ) gates
+  with fewer T gates than Campbell and Howard's $6m+1$ construction, settling a question open since 2017. The bound
+  is computable in polynomial time for a broad class of diagonal gates.
   \item On the output of PyZX's TODD-based optimizer, the bound proves 193 of 311 circuit pieces already optimal,
   against 113 for stabilizer nullity, the standard prior bound.
 \end{itemize}
 
-\entry{Magic State Labs}{Aug. 2026 -- Oct. 2026}{Research Consultant, with Pradeep Niroula}{Remote}
+\entry{Magic State Labs}{Aug. 2026 -- Present}{Research Consultant, with Pradeep Niroula}{Remote}
 \begin{itemize}\small
   \item Proved the verification checks that decide whether a problem is a good fit for decoded quantum interferometry
   (DQI), a recent quantum optimization algorithm, and used them to score an AI-agent search that found two new
@@ -97,8 +97,7 @@ algorithms beat classical ones.
   accuracy its circuits are exponentially shallower than standard Trotter simulation, at the cost of a modest increase
   in the number of runs.
   \item Proved that the method converges, bounded its cost, tightened the bounds for systems with weak interactions
-  or conserved quantities, and applied them to ground-state energies and the response properties that chemists and
-  materials scientists most want from a simulation.
+  or conserved quantities, and applied them to ground-state energy and Green's function estimation.
 \end{itemize}
 
 \entry{BlueQubit}{Oct. 2025 -- Present}{Part-time Researcher, AI and Core teams}{Los Angeles, CA (remote)}
@@ -127,25 +126,26 @@ algorithms beat classical ones.
 \subsection*{Preprints}
 \begin{enumerate}
   \item \textbf{A. R. Mazumder}. ``\href{https://arxiv.org/abs/2610.01024}{Exact $T$-counts of CCZ Layers from an
-  Isotropy Bound}.'' arXiv:2610.01024, 2026.
+  Isotropy Bound}.'' arXiv:2610.01024, 2026. Accepted to the Quantum Computing Applications and Systems (QCAS)
+  Workshop, ICCAD 2026. Submitted to \emph{Quantum}. \href{https://github.com/arulrhikm/isotropy-floor-code}{Code}.
   \item \textbf{A. R. Mazumder}. ``\href{https://arxiv.org/abs/2610.38189}{Ancilla-free Randomized Toffoli Gates and the
-  $T$-count of Boolean Oracles}.'' arXiv:2610.38189, 2026.
+  $T$-count of Boolean Oracles}.'' arXiv:2610.38189, 2026. Submitted to \emph{Quantum}. \href{https://github.com/arulrhikm/randomized-oracle-checks}{Code}.
   \item \textbf{A. R. Mazumder}, P. Niroula. ``\href{https://arxiv.org/abs/2610.06753}{Discovering New Problems for Decoded
-  Quantum Interferometry}.'' arXiv:2610.06753, 2026.
+  Quantum Interferometry}.'' arXiv:2610.06753, 2026. Submitted to \emph{Quantum}.
   \item \textbf{A. R. Mazumder}, J. Watson, S. Wang. ``\href{https://arxiv.org/abs/2608.13862}{Resource-Efficient
-  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862, 2026.
+  Quantum Eigenvalue Transform with Commutator Scaling}.'' arXiv:2608.13862, 2026. Submitted to \emph{Quantum}. \href{https://github.com/arulrhikm/numerics}{Code}.
   \item \textbf{A. R. Mazumder}, H. Karapetyan, M. Z. Mullath, R. H. Tanin, H. Gharibyan, H. Tepanyan.
-  ``\href{https://arxiv.org/abs/2607.09882}{Benchmarking Zero-Setup Quantum Circuit Simulators}.'' arXiv:2607.09882, 2026.
+  ``\href{https://arxiv.org/abs/2607.09882}{Benchmarking Zero-Setup Quantum Circuit Simulators}.'' arXiv:2607.09882, 2026. \href{https://github.com/arulrhikm/mps-pps-zero-setup-benchmarks}{Code}.
   \item F. Li, \textbf{A. R. Mazumder}, M. Zhao. ``\href{https://arxiv.org/pdf/2501.05624}{Quantum Annealing Approaches
-  to Shipment Rerouting Problems}.'' arXiv:2501.05624, 2025.
+  to Solving the Shipment Rerouting Problems}.'' arXiv:2501.05624, 2025.
 \end{enumerate}
 
 \subsection*{Conference and journal papers}
 \begin{enumerate}
   \item \textbf{A. R. Mazumder}, E. Towe. ``\href{https://arxiv.org/abs/2607.09893}{An End-to-End
-  Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE QCE}, 2026.
+  Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields}.'' \textit{IEEE QCE}, 2026. \href{https://github.com/arulrhikm/QuantumDGM}{Code}.
   \item \textbf{A. R. Mazumder}, S. R. Mazumder. ``\href{https://arxiv.org/abs/2607.09906}{Depth-Efficient
-  Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress}.'' \textit{IEEE QCE}, 2026.
+  Quantum Topological Data Analysis for Regime-Specific Detection of Financial Stress}.'' \textit{IEEE QCE}, 2026. \href{https://github.com/arulrhikm/Quantum-Market-Crash-TDA}{Code}.
   \item \textbf{A. R. Mazumder}, S. Tayur. ``\href{https://pubsonline.informs.org/doi/abs/10.1287/educ.2025.0288}{Five Starter Problems: Solving
   Quadratic Unconstrained Binary Optimization Models on Quantum Computers}.'' \textit{Tutorials in Operations
   Research}, INFORMS, 2025, pp.~145--183.
@@ -179,7 +179,7 @@ algorithms beat classical ones.
 \entry{CMU Quantum}{Sep. 2024 -- May 2026}{Founder and President (faculty advisor: Elias Towe)}{Pittsburgh, PA}
 \begin{itemize}\small
   \item Founded CMU's first student quantum club and grew it to 200+ members with a 10-person leadership team;
-  raised about \$15,000 in sponsorship from General Motors and Boeing.
+  raised about \$10,000 in sponsorship from General Motors and Boeing.
   \item Wrote the introductory \href{https://drive.google.com/file/d/1V5-msJkDjIr6-rSO2Juw5q21DpHwTdrh/view?usp=sharing}{teaching materials}
   for workshops with IBM, IonQ and Quantinuum; co-designed a track for the UN Future Leaders in
   Quantum hackathon; ran CMU's node of the Qollab Global Hackathon (12 teams); took 15 students to UMD's Quantum
@@ -197,9 +197,9 @@ algorithms beat classical ones.
 %----------TALKS----------
 \section{Talks and Posters}
 \begin{itemize}\small
-  \item \textbf{QRE 2026} and \href{https://unitary.foundation/posts/2026_ucon_recap/}{\textbf{UnitaryCon 2026}} (one of 5 posters selected from 20), Toronto --- posters, ``Certified T-count floors for Toffoli
-  networks and reversible circuits.''
-  \item \textbf{IBM Quantum Developer Conference 2026}, Chicago, Nov. 2026 --- poster, ``How Close to Optimal? Certified T-Count Floors for Toffoli Networks and Reversible Circuits.''
+  \item \textbf{QRE 2026} and \href{https://unitary.foundation/posts/2026_ucon_recap/}{\textbf{UnitaryCon 2026}} (one of 5 posters selected from 20), Toronto, and \textbf{IBM Quantum
+  Developer Conference 2026}, Chicago --- posters on certified T-count floors for Toffoli networks and reversible circuits.
+  \item \textbf{IEEE Quantum Week (QCE) 2026} --- talks on both QCE papers.
   \item \textbf{TQC 2026} --- poster, ``Resource-Efficient Quantum Eigenvalue Transform with Commutator Scaling''
   (\href{https://arulrhikm.github.io/media/documents/tqc2026-commutator-scaling-poster.pdf}{PDF}).
   \item \textbf{Caltech IQIM SURF Seminar}, Aug. 2025, and \textbf{Quantum Leap Career Nexus}, UMD, Nov. 2025 --- talks,
